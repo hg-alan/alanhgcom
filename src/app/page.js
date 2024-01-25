@@ -48,7 +48,7 @@ export default function Home() {
           }}
         >
           <li>
-            Generative AI{" "}
+            AI{" "}
             <ul style={{ paddingLeft: "20px", marginTop: "0.5rem" }}>
               <li style={{ margin: "0.5rem 0" }}>
                 AI-generated cards:{" "}
@@ -62,7 +62,7 @@ export default function Home() {
                 </a>{" "}
               </li>
               <li style={{ margin: "0.5rem 0" }}>
-                Book:{" "}
+                Generative art:{" "}
                 {/* Book examining the intersection of art, technology & human
                 cognition:{" "} */}
                 <a
@@ -76,7 +76,7 @@ export default function Home() {
             </ul>
           </li>
           <li style={{ marginTop: "2rem" }}>
-            Web Development & Ecommerce
+            Web development
             {/* Sub-bullets */}
             <ul style={{ paddingLeft: "20px", marginTop: "0.5rem" }}>
               {" "}
@@ -122,7 +122,7 @@ export default function Home() {
             Photography
             <ul style={{ paddingLeft: "20px", marginTop: "0.5rem" }}>
               <li style={{ margin: "0.5rem 0" }}>
-                Categories:{" "}
+                Genres:{" "}
                 <a
                   href="https://500px.com/p/alanhg/galleries/cityscape"
                   target="_blank"
@@ -159,9 +159,9 @@ export default function Home() {
           </li>
         </ul>
 
-        {/* <p style={{marginTop:"4rem"}}>
+        <p style={{marginTop:"4rem"}}>
           Don&apos;t panic, <br /> Alan{" "}
-        </p> */}
+        </p>
 
         {/* Social icons */}
         <div
@@ -171,7 +171,7 @@ export default function Home() {
             href="mailto:alan.hg@outlook.com"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ marginRight: "2rem", marginLeft: "1rem" }}
+            style={{ marginRight: "2rem", marginLeft: "0.5rem" }}
           >
             <Image
               src="/envelope-regular.svg"
