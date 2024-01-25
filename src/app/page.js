@@ -70,7 +70,7 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Do Andoids Dream of Synthetic Images?
+                  Do Androids Dream of Synthetic Images?
                 </a>{" "}
               </li>
             </ul>
@@ -217,5 +217,7 @@ export default function Home() {
         </div>
       </div>
     </main>
+
+    
   );
 }
