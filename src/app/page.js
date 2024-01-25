@@ -2,7 +2,14 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main style={{ display: "flex", flexDirection: "column", height: "100vh", padding: "0.5rem" }}>
+    <main
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        height: "100vh",
+        padding: "0.5rem",
+      }}
+    >
       {/* Header */}
       <header
         style={{
@@ -33,8 +40,6 @@ export default function Home() {
             poking the world
           </a>
           &quot;:
-          {/* , so if any of the following resonates with you, let&apos;s
-          chat. */}
         </p>
 
         <br />
@@ -48,7 +53,7 @@ export default function Home() {
           }}
         >
           <li>
-            AI{" "}
+            Artificial Intelligence{" "}
             <ul style={{ paddingLeft: "20px", marginTop: "0.5rem" }}>
               <li style={{ margin: "0.5rem 0" }}>
                 AI-generated cards:{" "}
@@ -63,8 +68,6 @@ export default function Home() {
               </li>
               <li style={{ margin: "0.5rem 0" }}>
                 Generative art:{" "}
-                {/* Book examining the intersection of art, technology & human
-                cognition:{" "} */}
                 <a
                   href="https://drive.google.com/file/d/1HZHul6S5f-0NYLbFnGkiQBV5Nm5nsjbO/view?usp=sharing"
                   target="_blank"
@@ -76,13 +79,11 @@ export default function Home() {
             </ul>
           </li>
           <li style={{ marginTop: "2rem" }}>
-            Web development
-            {/* Sub-bullets */}
+            Web Development
             <ul style={{ paddingLeft: "20px", marginTop: "0.5rem" }}>
               {" "}
               <li style={{ margin: "0.5rem 0" }}>
                 {" "}
-                {/* Clients range from multinational corporations such as{" "} */}
                 Clients include:{" "}
                 <a
                   href="https://www.staples.ca/"
@@ -99,7 +100,6 @@ export default function Home() {
                 >
                   Pernod Ricard,
                 </a>{" "}
-                {/* to brands with cult followings including{" "} */}
                 <a
                   href="https://quartierishome.com/"
                   target="_blank"
@@ -159,7 +159,7 @@ export default function Home() {
           </li>
         </ul>
 
-        <p style={{marginTop:"4rem"}}>
+        <p style={{ marginTop: "4rem" }}>
           Don&apos;t panic, <br /> Alan{" "}
         </p>
 
@@ -171,11 +171,11 @@ export default function Home() {
             href="mailto:alan.hg@outlook.com"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ marginRight: "2rem", marginLeft: "0.5rem" }}
+            style={{ marginRight: "2rem" }}
           >
             <Image
               src="/envelope-regular.svg"
-              alt="Your Icon"
+              alt="Email"
               width={27.5}
               height={27.5}
             />
@@ -188,7 +188,7 @@ export default function Home() {
           >
             <Image
               src="/linkedin-in.svg"
-              alt="Your Icon"
+              alt="LinkedIn"
               width={27.5}
               height={27.5}
             />
@@ -201,7 +201,7 @@ export default function Home() {
           >
             <Image
               src="/file-regular.svg"
-              alt="Your Icon"
+              alt="CV"
               width={27.5}
               height={27.5}
             />
@@ -212,7 +212,12 @@ export default function Home() {
             rel="noopener noreferrer"
             style={{ marginRight: "2rem" }}
           >
-            <Image src="/github.svg" alt="Your Icon" width={27.5} height={27.5} />
+            <Image
+              src="/github.svg"
+              alt="Github"
+              width={27.5}
+              height={27.5}
+            />
           </a>
         </div>
       </div>
