@@ -2,13 +2,12 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main style={{ display: "flex", flexDirection: "column", height: "100vh" }}>
+    <main style={{ display: "flex", flexDirection: "column", height: "100vh", padding: "0.5rem" }}>
       {/* Header */}
       <header
         style={{
           display: "flex",
           justifyContent: "start",
-          // border: "1px solid black",
         }}
       >
         <div>
@@ -17,11 +16,13 @@ export default function Home() {
       </header>
 
       {/* Rich text */}
-      <div style={{
+      <div
+        style={{
           flex: 1,
           padding: "1rem",
           overflowY: "auto",
-        }}>
+        }}
+      >
         <p>
           This site exists in the spirit of &quot;
           <a
@@ -37,12 +38,19 @@ export default function Home() {
 
         <br />
 
-        <ul style={{ paddingLeft: '1em', margin: 0, listStyleType: 'disc', listStylePosition: 'outside' }}>
+        <ul
+          style={{
+            paddingLeft: "1em",
+            margin: 0,
+            listStyleType: "disc",
+            listStylePosition: "outside",
+          }}
+        >
           <li style={{ marginTop: "1rem" }}>
             Generative AI{" "}
             <ul style={{ paddingLeft: "20px", marginTop: "0.5rem" }}>
               <li style={{ margin: "0.5rem 0" }}>
-                Web app for creating AI-generated cards called{" "}
+                Web app for creating AI-generated cards:{" "}
                 <a
                   href="https://www.instacard.ai/"
                   target="_blank"
@@ -52,10 +60,9 @@ export default function Home() {
                   instacard.ai
                 </a>{" "}
               </li>
-              {/* Adjusted marginTop here */}
               <li style={{ margin: "0.5rem 0" }}>
-                Book examining the intersection of art, technology and human
-                cognition called{" "}
+                Book examining the intersection of art, technology & human
+                cognition:{" "}
                 <a
                   href="https://drive.google.com/file/d/1HZHul6S5f-0NYLbFnGkiQBV5Nm5nsjbO/view?usp=sharing"
                   target="_blank"
@@ -72,10 +79,8 @@ export default function Home() {
             {/* Sub-bullets */}
             <ul style={{ paddingLeft: "20px", marginTop: "0.5rem" }}>
               {" "}
-              {/* Adjusted marginTop here */}
               <li style={{ margin: "0.5rem 0" }}>
                 {" "}
-                {/* Ensure this margin is applied */}
                 Clients range from multinational corporations such as{" "}
                 <a
                   href="https://www.staples.ca/"
@@ -84,7 +89,7 @@ export default function Home() {
                 >
                   Staples
                 </a>{" "}
-                and{" "}
+                &{" "}
                 <a
                   href="https://www.pernod-ricard.com/en"
                   target="_blank"
@@ -100,7 +105,7 @@ export default function Home() {
                 >
                   Quartier
                 </a>{" "}
-                and{" "}
+                &{" "}
                 <a
                   href="https://www.suuuperposition.com/"
                   target="_blank"
@@ -139,7 +144,7 @@ export default function Home() {
                 >
                   outside
                 </a>{" "}
-                and{" "}
+                &{" "}
                 <a
                   href="https://500px.com/p/alanhg/galleries/-other"
                   target="_blank"
@@ -152,6 +157,10 @@ export default function Home() {
           </li>
         </ul>
 
+        <p style={{marginTop:"4rem"}}>
+          Don&apos;t panic, <br /> Alan{" "}
+        </p>
+
         {/* Social icons */}
         <div
           style={{ textAlign: "left", marginTop: "4rem", marginBottom: "2rem" }}
@@ -162,7 +171,12 @@ export default function Home() {
             rel="noopener noreferrer"
             style={{ marginRight: "2rem", marginLeft: "1rem" }}
           >
-            <Image src="/envelope-regular.svg" alt="Your Icon" width={35} height={35} />
+            <Image
+              src="/envelope-regular.svg"
+              alt="Your Icon"
+              width={35}
+              height={35}
+            />
           </a>
           <a
             href="https://www.linkedin.com/in/alan-hg/"
@@ -170,7 +184,12 @@ export default function Home() {
             rel="noopener noreferrer"
             style={{ marginRight: "2rem" }}
           >
-            <Image src="/linkedin-in.svg" alt="Your Icon" width={35} height={35} />
+            <Image
+              src="/linkedin-in.svg"
+              alt="Your Icon"
+              width={35}
+              height={35}
+            />
           </a>
           <a
             href="https://drive.google.com/file/d/1WkkdELHxypuYkDs6BT-OAXb0NNJflFSS/view?usp=sharing"
@@ -178,7 +197,12 @@ export default function Home() {
             rel="noopener noreferrer"
             style={{ marginRight: "2rem" }}
           >
-            <Image src="/file-regular.svg" alt="Your Icon" width={35} height={35} />
+            <Image
+              src="/file-regular.svg"
+              alt="Your Icon"
+              width={35}
+              height={35}
+            />
           </a>
           <a
             href="https://github.com/hg-alan"
