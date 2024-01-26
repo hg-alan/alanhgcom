@@ -159,7 +159,7 @@ export default function Home() {
           </li>
         </ul>
 
-        <p style={{ marginTop: "4rem" }}>
+        <p style={{ marginTop: "3rem" }}>
           Don&apos;t panic, <br /> Alan{" "}
         </p>
 
