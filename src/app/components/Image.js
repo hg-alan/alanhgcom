@@ -1,10 +1,10 @@
 import Image from 'next/image';
 
-const ImageComponent = ({ genre, fileName }) => {
+const ImageComponent = ({ fileName }) => {
   const imageWrapper = {
     position: 'relative',
-    width: '90vw',
-    height: '90vh',
+    width: '75vw',
+    height: '85vh',
     display: 'flex',
     flexDirection: 'column',
     marginBottom: '5rem',
@@ -14,7 +14,7 @@ const ImageComponent = ({ genre, fileName }) => {
     <div style={imageWrapper}>
       <Image
         src={`/art/photography/${fileName}`}
-        alt={`Cityscape of ${fileName.split('.')[0]}`}
+        alt={`${fileName.split('.')[0]}`}
         fill={true}
         objectFit='contain'
         priority

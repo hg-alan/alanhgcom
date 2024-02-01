@@ -1,4 +1,5 @@
 import Image from "next/image";
+import HeaderHome from "./components/HeaderHome";
 import Link from "next/link";
 
 export default function Home() {
@@ -8,26 +9,19 @@ export default function Home() {
         display: "flex",
         flexDirection: "column",
         height: "100vh",
-        padding: "0.5rem",
+        overflowY: "hidden",
+        overflowX: "hidden",
+
       }}
     >
       {/* Header */}
-      <header
-        style={{
-          display: "flex",
-          justifyContent: "start",
-        }}
-      >
-        <div>
-          <Image src="/alanhg.svg" alt="AlanHG Logo" width={180} height={60} />
-        </div>
-      </header>
+      <HeaderHome />
 
       {/* Rich text */}
       <div
         style={{
           flex: 1,
-          padding: "0.5rem",
+          paddingLeft: "1rem",
           overflowY: "auto",
         }}
       >
@@ -192,6 +186,20 @@ export default function Home() {
             <Image
               src="/icons/github.svg"
               alt="Github"
+              width={27.5}
+              height={27.5}
+              className="social-icon"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/alan.hg/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ marginRight: "2rem" }}
+          >
+            <Image
+              src="/icons/instagram.svg"
+              alt="Instagram"
               width={27.5}
               height={27.5}
               className="social-icon"
