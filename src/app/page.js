@@ -102,8 +102,6 @@ export default function Home() {
                   Pernod Ricard
                 </a>
                 ,{" "}
-                  Pernod Ricard
-                </a>,{" "}
                 <a
                   href="https://quartierishome.com/"
                   target="_blank"
