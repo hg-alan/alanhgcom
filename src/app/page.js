@@ -115,7 +115,7 @@ export default function Home() {
             </ul>
           </li>
           <li style={{ marginTop: "2rem" }}>
-            <strong>Art</strong>
+            <strong>Photography</strong>
             <ul style={{ paddingLeft: "20px", marginTop: "0.5rem" }}>
               <li style={{ margin: "0.5rem 0" }}>
                 Genres: <Link href="/photography/cityscape">Cityscape</Link>,{" "}
