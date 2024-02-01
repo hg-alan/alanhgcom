@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -31,7 +32,7 @@ export default function Home() {
         }}
       >
         <p>
-          This site exists in the spirit of &quot;
+          This site exists in the <em>spirit</em> of &quot;
           <a
             href="https://youtu.be/kYfNvmF0Bqw?t=53"
             target="_blank"
@@ -53,7 +54,7 @@ export default function Home() {
           }}
         >
           <li>
-            Artificial Intelligence{" "}
+            <strong>Artificial Intelligence</strong>{" "}
             <ul style={{ paddingLeft: "20px", marginTop: "0.5rem" }}>
               <li style={{ margin: "0.5rem 0" }}>
                 AI-generated cards:{" "}
@@ -79,7 +80,7 @@ export default function Home() {
             </ul>
           </li>
           <li style={{ marginTop: "2rem" }}>
-            Web Development
+            <strong>Web Development</strong>
             <ul style={{ paddingLeft: "20px", marginTop: "0.5rem" }}>
               {" "}
               <li style={{ margin: "0.5rem 0" }}>
@@ -98,6 +99,9 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  Pernod Ricard
+                </a>
+                ,{" "}
                   Pernod Ricard
                 </a>,{" "}
                 <a
@@ -119,41 +123,13 @@ export default function Home() {
             </ul>
           </li>
           <li style={{ marginTop: "2rem" }}>
-            Photography
+            <strong>Art</strong>
             <ul style={{ paddingLeft: "20px", marginTop: "0.5rem" }}>
               <li style={{ margin: "0.5rem 0" }}>
-                Genres:{" "}
-                <a
-                  href="https://500px.com/p/alanhg/galleries/cityscape"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Cityscape
-                </a>
-                ,{" "}
-                <a
-                  href="https://500px.com/p/alanhg/galleries/live"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Concert
-                </a>
-                ,{" "}
-                <a
-                  href="https://500px.com/p/alanhg/galleries/outside"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Outside
-                </a>{" "}
-                &{" "}
-                <a
-                  href="https://500px.com/p/alanhg/galleries/-other"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Other
-                </a>
+                Genres: <Link href="/photography/cityscape">Cityscape</Link>,{" "}
+                <Link href="/photography/concert">Concert</Link>,{" "}
+                <Link href="/photography/outside">Outside</Link> &{" "}
+                <Link href="/photography/other">Other</Link>
               </li>
             </ul>
           </li>
@@ -174,10 +150,11 @@ export default function Home() {
             style={{ marginRight: "2rem" }}
           >
             <Image
-              src="/envelope-regular.svg"
+              src="icons/envelope-regular.svg"
               alt="Email"
               width={27.5}
               height={27.5}
+              className="social-icon"
             />
           </a>
           <a
@@ -187,10 +164,11 @@ export default function Home() {
             style={{ marginRight: "2rem" }}
           >
             <Image
-              src="/linkedin-in.svg"
+              src="icons/linkedin-in.svg"
               alt="LinkedIn"
               width={27.5}
               height={27.5}
+              className="social-icon"
             />
           </a>
           <a
@@ -200,10 +178,11 @@ export default function Home() {
             style={{ marginRight: "2rem" }}
           >
             <Image
-              src="/file-regular.svg"
+              src="icons/resume.svg"
               alt="CV"
               width={27.5}
               height={27.5}
+              className="social-icon"
             />
           </a>
           <a
@@ -213,10 +192,11 @@ export default function Home() {
             style={{ marginRight: "2rem" }}
           >
             <Image
-              src="/github.svg"
+              src="/icons/github.svg"
               alt="Github"
               width={27.5}
               height={27.5}
+              className="social-icon"
             />
           </a>
         </div>

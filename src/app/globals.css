@@ -5,13 +5,13 @@
 }
 
 /* Apply base styles to html and body */
-html,
+/* html,
 body {
   max-width: 100vw;
   max-height: 100vh;
   overflow-x: hidden;
   overflow-y: hidden;
-}
+} */
 
 /* Style for all anchor tags using the custom property */
 a {
@@ -24,3 +24,12 @@ a:hover {
   color: var(--link-hover-color); 
   text-decoration: underline;
 }
+
+.social-icon {
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Example effect: scale up icon on hover */
+}
+
