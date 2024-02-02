@@ -1,5 +1,6 @@
 import ImageComponent from "@/app/components/Image";
 import HeaderHome from "@/app/components/HeaderHome";
+import Link from "next/link";
 
 const Outside = () => {
   const imageGridWrapper = {
@@ -22,8 +23,20 @@ const Outside = () => {
         <ImageComponent fileName={"other/asher.webp"} />
         <ImageComponent fileName={"other/trap.webp"} />
         <ImageComponent fileName={"other/flat.webp"} />
-        <ImageComponent fileName={"other/fireworks"} />
+        <ImageComponent fileName={"other/fireworks.webp"} />
         <ImageComponent fileName={"other/sry.webp"} />
+      </div>
+      <div>
+        <h3 style={{ textAlign: "center" }}>
+          Checkout other genres including:{" "}
+          <Link href="/photography/concert">Concert</Link>,{" "}
+          <Link href="/photography/outside">Outside</Link> &{" "}
+          <Link href="/photography/cityscape">Cityscape</Link>
+        </h3>
+        <h3 style={{ textAlign: "center" }}>or</h3>
+        <h3 style={{ textAlign: "center", marginBottom: "5rem" }}>
+          Return to <Link href="/">Homepage</Link>
+        </h3>
       </div>
     </>
   );

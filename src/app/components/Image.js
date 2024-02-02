@@ -3,11 +3,11 @@ import Image from 'next/image';
 const ImageComponent = ({ fileName }) => {
   const imageWrapper = {
     position: 'relative',
-    width: '75vw',
-    height: '85vh',
+    width: '95vw',
+    height: '95vh',
     display: 'flex',
     flexDirection: 'column',
-    marginBottom: '5rem',
+    marginBottom: '5em',
   };
 
   return (
@@ -17,7 +17,7 @@ const ImageComponent = ({ fileName }) => {
         alt={`${fileName.split('.')[0]}`}
         fill={true}
         objectFit='contain'
-        priority
+        
       />
     </div>
   );

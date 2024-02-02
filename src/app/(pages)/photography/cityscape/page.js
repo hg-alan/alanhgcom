@@ -1,5 +1,6 @@
 import ImageComponent from "@/app/components/Image";
-import HeaderHome from "@/app/components/HeaderHome";
+import HeaderOther from "@/app/components/HeaderOther";
+import Link from "next/link";
 
 const Cityscape = () => {
   const imageGridWrapper = {
@@ -11,7 +12,7 @@ const Cityscape = () => {
 
   return (
     <>
-      <HeaderHome />
+      <HeaderOther />
       <div style={imageGridWrapper}>
         <ImageComponent fileName="cityscape/514.webp" />
         <ImageComponent fileName="cityscape/downside.webp" />
@@ -24,6 +25,18 @@ const Cityscape = () => {
         <ImageComponent fileName="cityscape/rolling.webp" />
         <ImageComponent fileName="cityscape/high.webp" />
         <ImageComponent fileName="cityscape/spain.webp" />
+      </div>
+      <div>
+        <h3 style={{ textAlign: "center" }}>
+          Checkout other genres including:{" "}
+          <Link href="/photography/concert">Concert</Link>,{" "}
+          <Link href="/photography/outside">Outside</Link> &{" "}
+          <Link href="/photography/other">Other</Link>
+        </h3>{" "}
+        <h3 style={{ textAlign: "center" }}>or</h3>
+        <h3 style={{ textAlign: "center", marginBottom: "5rem" }}>
+          Return to <Link href="/">Homepage</Link>
+        </h3>
       </div>
     </>
   );
