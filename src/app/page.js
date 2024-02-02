@@ -43,7 +43,7 @@ export default function Home() {
         >
           <li>
             <strong>Artificial Intelligence</strong>{" "}
-            <ul style={{ paddingLeft: "20px"}}>
+            <ul style={{ paddingLeft: "20px" }}>
               <li style={{ margin: "0.5rem 0" }}>
                 AI-generated cards:{" "}
                 <a
@@ -57,19 +57,21 @@ export default function Home() {
               </li>
               <li style={{ margin: "0.5rem 0" }}>
                 Generative art:{" "}
-                <a
-                  href="https://drive.google.com/file/d/1HZHul6S5f-0NYLbFnGkiQBV5Nm5nsjbO/view?usp=sharing"
-                  target="_blank"
+                <Link
                   rel="noopener noreferrer"
+                  target="_blank"
+                  prefetch={true}
+                  href="/art/sheep/sheePDF.pdf"
                 >
+                  {" "}
                   Do Androids Dream of Synthetic Images?
-                </a>{" "}
+                </Link>
               </li>
             </ul>
           </li>
           <li style={{ marginTop: "2rem" }}>
             <strong>Web Development</strong>
-            <ul style={{ paddingLeft: "20px"}}>
+            <ul style={{ paddingLeft: "20px" }}>
               {" "}
               <li style={{ margin: "0.5rem 0" }}>
                 {" "}
@@ -110,12 +112,36 @@ export default function Home() {
           </li>
           <li style={{ marginTop: "2rem" }}>
             <strong>Photography</strong>
-            <ul style={{ paddingLeft: "20px"}}>
+            <ul style={{ paddingLeft: "20px" }}>
               <li style={{ margin: "0.5rem 0" }}>
-                Genres: <Link href="/photography/cityscape">Cityscape</Link>,{" "}
-                <Link href="/photography/concert">Concert</Link>,{" "}
-                <Link href="/photography/outside">Outside</Link> &{" "}
-                <Link href="/photography/other">Other</Link>
+                Genres:{" "}
+                <Link
+                  target="_blank"
+                  prefetch={true}
+                  href="/photography/cityscape"
+                >
+                  Cityscape
+                </Link>
+                ,{" "}
+                <Link
+                  target="_blank"
+                  prefetch={true}
+                  href="/photography/concert"
+                >
+                  Concert
+                </Link>
+                ,{" "}
+                <Link
+                  target="_blank"
+                  prefetch={true}
+                  href="/photography/outside"
+                >
+                  Outside
+                </Link>{" "}
+                &{" "}
+                <Link target="_blank" prefetch={true} href="/photography/other">
+                  Other
+                </Link>
               </li>
             </ul>
           </li>
@@ -126,9 +152,7 @@ export default function Home() {
         </p>
 
         {/* Social icons */}
-        <div
-          style={{ textAlign: "center", marginTop: "2rem"}}
-        >
+        <div style={{ textAlign: "center", marginTop: "2rem" }}>
           <a
             href="mailto:alan.hg@outlook.com"
             target="_blank"
@@ -157,10 +181,12 @@ export default function Home() {
               className="social-icon"
             />
           </a>
-          <a
-            href="https://drive.google.com/file/d/1WkkdELHxypuYkDs6BT-OAXb0NNJflFSS/view?usp=sharing"
-            target="_blank"
+
+          <Link
             rel="noopener noreferrer"
+            target="_blank"
+            prefetch={true}
+            href="/cv/Alan_Healey-Greene_CV.pdf"
             style={{ marginRight: "2rem" }}
           >
             <Image
@@ -170,7 +196,7 @@ export default function Home() {
               height={27.5}
               className="social-icon"
             />
-          </a>
+          </Link>
           <a
             href="https://github.com/hg-alan"
             target="_blank"
