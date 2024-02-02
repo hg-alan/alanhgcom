@@ -28,8 +28,8 @@ const Outside = () => {
       </div>
       <div>
         <h3 style={{ textAlign: "center" }}>
-          Checkout:
-          <Link href="/photography/concert"> Concert</Link>,{" "}
+          Checkout:{" "}
+          <Link href="/photography/concert">Concert</Link>,{" "}
           <Link href="/photography/outside">Outside</Link> &{" "}
           <Link href="/photography/cityscape">Cityscape</Link>
         </h3>

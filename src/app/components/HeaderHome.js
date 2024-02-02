@@ -6,9 +6,6 @@ const HeaderHome = () => {
     <header
       style={{
         display: "flex",
-        justifyContent: "left",
-        marginLeft: "0.5rem",
-        height: "5rem",
       }}
     >
       <div>

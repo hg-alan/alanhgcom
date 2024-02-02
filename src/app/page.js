@@ -8,10 +8,7 @@ export default function Home() {
       style={{
         display: "flex",
         flexDirection: "column",
-        height: "100vh",
-        overflowY: "hidden",
-        overflowX: "hidden",
-
+        placeItems: "center",
       }}
     >
       {/* Header */}
@@ -20,9 +17,7 @@ export default function Home() {
       {/* Rich text */}
       <div
         style={{
-          flex: 1,
-          paddingLeft: "1rem",
-          overflowY: "auto",
+          padding: "0 1rem 1rem 1rem",
         }}
       >
         <p>
@@ -41,7 +36,6 @@ export default function Home() {
 
         <ul
           style={{
-            paddingLeft: "1em",
             margin: 0,
             listStyleType: "disc",
             listStylePosition: "outside",
@@ -49,7 +43,7 @@ export default function Home() {
         >
           <li>
             <strong>Artificial Intelligence</strong>{" "}
-            <ul style={{ paddingLeft: "20px", marginTop: "0.5rem" }}>
+            <ul style={{ paddingLeft: "20px"}}>
               <li style={{ margin: "0.5rem 0" }}>
                 AI-generated cards:{" "}
                 <a
@@ -75,7 +69,7 @@ export default function Home() {
           </li>
           <li style={{ marginTop: "2rem" }}>
             <strong>Web Development</strong>
-            <ul style={{ paddingLeft: "20px", marginTop: "0.5rem" }}>
+            <ul style={{ paddingLeft: "20px"}}>
               {" "}
               <li style={{ margin: "0.5rem 0" }}>
                 {" "}
@@ -116,7 +110,7 @@ export default function Home() {
           </li>
           <li style={{ marginTop: "2rem" }}>
             <strong>Photography</strong>
-            <ul style={{ paddingLeft: "20px", marginTop: "0.5rem" }}>
+            <ul style={{ paddingLeft: "20px"}}>
               <li style={{ margin: "0.5rem 0" }}>
                 Genres: <Link href="/photography/cityscape">Cityscape</Link>,{" "}
                 <Link href="/photography/concert">Concert</Link>,{" "}
@@ -127,13 +121,13 @@ export default function Home() {
           </li>
         </ul>
 
-        <p style={{ marginTop: "3rem" }}>
+        <p style={{ marginTop: "2rem" }}>
           Don&apos;t panic, <br /> Alan{" "}
         </p>
 
         {/* Social icons */}
         <div
-          style={{ textAlign: "left", marginTop: "3rem", marginBottom: "2rem" }}
+          style={{ textAlign: "center", marginTop: "2rem"}}
         >
           <a
             href="mailto:alan.hg@outlook.com"

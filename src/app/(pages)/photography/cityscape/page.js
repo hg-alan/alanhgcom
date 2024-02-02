@@ -28,8 +28,8 @@ const Cityscape = () => {
       </div>
       <div>
         <h3 style={{ textAlign: "center" }}>
-          Checkout:
-          <Link href="/photography/concert"> Concert</Link>,{" "}
+          Checkout:{" "}
+          <Link href="/photography/concert">Concert</Link>,{" "}
           <Link href="/photography/outside">Outside</Link> &{" "}
           <Link href="/photography/other">Other</Link>
         </h3>{" "}
