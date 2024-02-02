@@ -1,5 +1,5 @@
 import ImageComponent from "@/app/components/Image";
-import HeaderHome from "@/app/components/HeaderHome";
+import HeaderOther from "@/app/components/HeaderOther";
 import Link from "next/link";
 
 const Outside = () => {
@@ -12,7 +12,7 @@ const Outside = () => {
 
   return (
     <>
-      <HeaderHome />
+      <HeaderOther />
       <div style={imageGridWrapper}>
         <ImageComponent fileName="outside/staring.webp" />
         <ImageComponent fileName="outside/penelope.webp" />

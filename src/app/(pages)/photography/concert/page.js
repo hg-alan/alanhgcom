@@ -1,6 +1,6 @@
 import ImageComponent from "@/app/components/Image";
-import HeaderHome from "@/app/components/HeaderHome";
 import Link from "next/link";
+import HeaderOther from "@/app/components/HeaderOther";
 
 const Concert = () => {
   const imageGridWrapper = {
@@ -12,7 +12,7 @@ const Concert = () => {
 
   return (
     <>
-      <HeaderHome />
+      <HeaderOther />
       <div style={imageGridWrapper}>
         <ImageComponent fileName="concert/future.webp" />
         <ImageComponent fileName="concert/skep.webp" />
