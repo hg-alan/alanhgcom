@@ -7,7 +7,7 @@ const ImageComponent = ({ fileName }) => {
     height: '95vh',
     display: 'flex',
     flexDirection: 'column',
-    marginBottom: '5em',
+    marginBottom: '5rem',
   };
 
   return (
