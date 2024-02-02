@@ -28,7 +28,7 @@ const Concert = () => {
       </div>
       <div>
         <h3 style={{ textAlign: "center" }}>
-          Also checkout:
+          Checkout:
           <Link href="/photography/cityscape"> Cityscape</Link>,{" "}
           <Link href="/photography/outside">Outside</Link> &{" "}
           <Link href="/photography/other">Other</Link>
