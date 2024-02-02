@@ -21,7 +21,7 @@ const Cityscape = () => {
         <ImageComponent fileName="cityscape/66.webp" />
         <ImageComponent fileName="cityscape/bbridge.webp" />
         <ImageComponent fileName="cityscape/schedule.webp" />
-        <ImageComponent fileName="cityscape/24mm.webp" />
+        <ImageComponent fileName="cityscape/24.webp" />
         <ImageComponent fileName="cityscape/rolling.webp" />
         <ImageComponent fileName="cityscape/high.webp" />
         <ImageComponent fileName="cityscape/spain.webp" />

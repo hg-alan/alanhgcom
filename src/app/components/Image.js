@@ -17,7 +17,7 @@ const ImageComponent = ({ fileName }) => {
         alt={`${fileName.split('.')[0]}`}
         fill={true}
         objectFit='contain'
-        
+        placeholder='blur'
       />
     </div>
   );
