@@ -28,8 +28,8 @@ const Concert = () => {
       </div>
       <div>
         <h3 style={{ textAlign: "center" }}>
-          Checkout other genres including:{" "}
-          <Link href="/photography/cityscape">Cityscape</Link>,{" "}
+          Also checkout:
+          <Link href="/photography/cityscape"> Cityscape</Link>,{" "}
           <Link href="/photography/outside">Outside</Link> &{" "}
           <Link href="/photography/other">Other</Link>
         </h3>

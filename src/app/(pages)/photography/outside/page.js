@@ -28,8 +28,8 @@ const Outside = () => {
       </div>
       <div>
         <h3 style={{ textAlign: "center" }}>
-          Checkout other genres including:{" "}
-          <Link href="/photography/concert">Concert</Link>,{" "}
+          Also checkout:
+          <Link href="/photography/concert"> Concert</Link>,{" "}
           <Link href="/photography/cityscape">Cityscape</Link> &{" "}
           <Link href="/photography/other">Other</Link>
         </h3>{" "}
