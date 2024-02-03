@@ -2,117 +2,139 @@ import Link from "next/link";
 
 const RichText = () => {
   return (
-    <div
-      style={{
-        padding: "1rem",
-      }}
-    >
+    <div style={{ padding: "1rem" }}>
       <p>
         This site exists in the <em>spirit</em> of &quot;
-        <a
+        <Link
           href="https://youtu.be/kYfNvmF0Bqw?t=53"
-          target="_blank"
           rel="noopener noreferrer"
+          target="_blank"
         >
           poking the world
-        </a>
+        </Link>
         &quot;:
       </p>
 
       <ul
         style={{
-          margin: 0,
           listStyleType: "disc",
           listStylePosition: "outside",
         }}
       >
         <li>
           <strong>Artificial Intelligence</strong>{" "}
-          <ul style={{ paddingLeft: "20px" }}>
-            <li style={{ margin: "0.5rem 0" }}>
-              AI-generated cards:{" "}
-              <a
-                href="https://www.instacard.ai/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {" "}
-                Instacard.ai
-              </a>{" "}
-            </li>
-            <li style={{ margin: "0.5rem 0" }}>
-              Generative art:{" "}
+          <ul style={{ paddingLeft: "15px" }}>
+            <li style={{ margin: "0.25rem 0" }}>
+              Generative cards:{" "}
               <Link
+                href="https://www.instacard.ai/"
                 rel="noopener noreferrer"
                 target="_blank"
-                prefetch={true}
-                href="/art/sheep/sheePDF.pdf"
               >
-                {" "}
+                Instacard.ai
+              </Link>{" "}
+            </li>
+            <li style={{ margin: "0.25rem 0" }}>
+              Study:{" "}
+              <Link href="/art/sheep/sheePDF.pdf">
                 Do Androids Dream of Synthetic Images?
               </Link>
             </li>
           </ul>
         </li>
-        <li style={{ marginTop: "1rem" }}>
+        <li style={{ marginTop: "0.5rem" }}>
           <strong>Web Development</strong>
-          <ul style={{ paddingLeft: "20px" }}>
-            {" "}
-            <li style={{ margin: "0.5rem 0" }}>
-              {" "}
-              Clients include:{" "}
-              <a
-                href="https://www.staples.ca/"
-                target="_blank"
+          <ul style={{ paddingLeft: "15px" }}>
+            <li style={{ margin: "0.25rem 0" }}>
+              Agency clients:{" "}
+              <Link
+                href="https://www.rbcroyalbank.com/"
                 rel="noopener noreferrer"
+                target="_blank"
+              >
+                RBC
+              </Link>
+              ,{" "}
+              <Link
+                href="https://www.staples.ca/"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 Staples
-              </a>
+              </Link>
               ,{" "}
-              <a
-                href="https://www.pernod-ricard.com/en"
-                target="_blank"
+              <Link
+                href="https://guardanthealth.com/"
                 rel="noopener noreferrer"
+                target="_blank"
+              >
+                Guardant Health
+              </Link>{" "}
+              &{" "}
+              <Link
+                href="https://www.ig.ca/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                IG Wealth Management
+              </Link>
+            </li>
+          </ul>
+          <ul style={{ paddingLeft: "15px" }}>
+            <li style={{ margin: "0.25rem 0" }}>
+              Freelance clients:{" "}
+              <Link
+                href="https://www.pernod-ricard.com/en"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 Pernod Ricard
-              </a>
+              </Link>
               ,{" "}
-              <a
+              <Link
                 href="https://quartierishome.com/"
-                target="_blank"
                 rel="noopener noreferrer"
+                target="_blank"
               >
                 Quartier
-              </a>{" "}
-              &{" "}
-              <a
-                href="https://www.suuuperposition.com/"
-                target="_blank"
+              </Link>
+              ,{" "}
+              <Link
+                href="https://monarmoire.com/"
                 rel="noopener noreferrer"
+                target="_blank"
+              >
+                Armoire
+              </Link>{" "}
+              &{" "}
+              <Link
+                href="https://www.suuuperposition.com/"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 Suuuperposition
-              </a>
+              </Link>
             </li>
           </ul>
         </li>
-        <li style={{ marginTop: "1rem" }}>
+        <li style={{ marginTop: "0.5rem" }}>
           <strong>Photography</strong>
-          <ul style={{ paddingLeft: "20px" }}>
-            <li style={{ margin: "0.5rem 0" }}>
+          <ul style={{ paddingLeft: "15px" }}>
+            <li style={{ margin: "0.25rem 0" }}>
               Genres:{" "}
-              <Link prefetch={true} href="/photography/cityscape">
+              <Link href="/photography/cityscape" prefetch={true}>
                 Cityscape
               </Link>
               ,{" "}
-              <Link prefetch={true} href="/photography/concert">
+              <Link href="/photography/concert" prefetch={true}>
                 Concert
               </Link>
               ,{" "}
-              <Link prefetch={true} href="/photography/outside">
+              <Link href="/photography/outside" prefetch={true}>
                 Outside
               </Link>{" "}
               &{" "}
-              <Link prefetch={true} href="/photography/other">
+              <Link href="/photography/other" prefetch={true}>
                 Other
               </Link>
             </li>
