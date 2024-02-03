@@ -35,7 +35,7 @@ const RichText = () => {
               </Link>{" "}
             </li>
             <li style={{ margin: "0.375rem 0" }}>
-              Study:{" "}
+              Art:{" "}
               <Link href="/art/sheep/sheePDF.pdf">
                 Do Androids Dream of Synthetic Images?
               </Link>

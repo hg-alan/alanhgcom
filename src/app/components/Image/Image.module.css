@@ -2,7 +2,7 @@
 .imageWrapper {
     position: relative;
     width: 95vw;
-    height: 84vh; /* default for mobile */
+    height: 84vh; 
     display: flex;
     flex-direction: column;
     margin-bottom: 5rem;
