@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const HeaderHome = () => {
+const Header = () => {
   return (
     <header
       style={{
         display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
       <div>
@@ -17,4 +19,4 @@ const HeaderHome = () => {
   );
 };
 
-export default HeaderHome;
+export default Header;

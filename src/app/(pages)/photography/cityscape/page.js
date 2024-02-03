@@ -1,4 +1,4 @@
-import HeaderOther from "@/app/components/HeaderOther";
+import Header from "@/app/components/Header";
 import ImageNavigator from "@/app/components/ImagesNavigator";
 import ImagesList from "@/app/components/ImagesList"; 
 
@@ -23,7 +23,7 @@ const Cityscape = () => {
 
   return (
     <>
-      <HeaderOther />
+      <Header />
       <ImagesList fileNames={fileNames} />
       <ImageNavigator
         category1={category1}
