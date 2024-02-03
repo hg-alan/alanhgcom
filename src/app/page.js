@@ -32,8 +32,6 @@ export default function Home() {
           &quot;:
         </p>
 
-        <br />
-
         <ul
           style={{
             margin: 0,
