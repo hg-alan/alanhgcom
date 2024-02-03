@@ -1,0 +1,17 @@
+/* ImageComponent.module.css */
+.imageWrapper {
+    position: relative;
+    width: 95vw;
+    height: 84vh; /* default for mobile */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+  
+  /* Media query for desktop screens */
+  @media (max-width: 768px) {
+    .imageWrapper {
+      height: 42vh; /* mobile */
+    }
+  }
+  

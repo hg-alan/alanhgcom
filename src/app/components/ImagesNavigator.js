@@ -8,9 +8,7 @@ function ImageNavigator({ category1, category2, category3 }) {
         style={{
           textAlign: "center",
           border: "1px solid black",
-          width: "15rem",
-          paddingLeft: "1rem",
-          paddingRight: "1rem",
+          width: "17.5rem",
           backgroundColor: "white",
         }}
       >

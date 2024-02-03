@@ -1,4 +1,4 @@
-import ImageComponent from "./Image"; // Adjust the import path as necessary
+import ImageComponent from "./Image/Image"; // Adjust the import path as necessary
 
 const ImagesList = ({ fileNames }) => {
   const imageListStyle = {
