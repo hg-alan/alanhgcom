@@ -24,7 +24,7 @@ const RichText = () => {
         <li>
           <strong>Artificial Intelligence</strong>{" "}
           <ul style={{ paddingLeft: "15px" }}>
-            <li style={{ margin: "0.25rem 0" }}>
+            <li style={{ margin: "0.375rem 0" }}>
               Generative cards:{" "}
               <Link
                 href="https://www.instacard.ai/"
@@ -34,7 +34,7 @@ const RichText = () => {
                 Instacard.ai
               </Link>{" "}
             </li>
-            <li style={{ margin: "0.25rem 0" }}>
+            <li style={{ margin: "0.375rem 0" }}>
               Study:{" "}
               <Link href="/art/sheep/sheePDF.pdf">
                 Do Androids Dream of Synthetic Images?
@@ -42,10 +42,10 @@ const RichText = () => {
             </li>
           </ul>
         </li>
-        <li style={{ marginTop: "0.5rem" }}>
+        <li style={{ marginTop: "1rem" }}>
           <strong>Web Development</strong>
           <ul style={{ paddingLeft: "15px" }}>
-            <li style={{ margin: "0.25rem 0" }}>
+            <li style={{ margin: "0.375rem 0" }}>
               Agency clients:{" "}
               <Link
                 href="https://www.rbcroyalbank.com/"
@@ -81,7 +81,7 @@ const RichText = () => {
             </li>
           </ul>
           <ul style={{ paddingLeft: "15px" }}>
-            <li style={{ margin: "0.25rem 0" }}>
+            <li style={{ margin: "0.375rem 0" }}>
               Freelance clients:{" "}
               <Link
                 href="https://www.pernod-ricard.com/en"
@@ -117,10 +117,10 @@ const RichText = () => {
             </li>
           </ul>
         </li>
-        <li style={{ marginTop: "0.5rem" }}>
+        <li style={{ marginTop: "1rem" }}>
           <strong>Photography</strong>
           <ul style={{ paddingLeft: "15px" }}>
-            <li style={{ margin: "0.25rem 0" }}>
+            <li style={{ margin: "0.375rem 0" }}>
               Genres:{" "}
               <Link href="/photography/cityscape" prefetch={true}>
                 Cityscape
