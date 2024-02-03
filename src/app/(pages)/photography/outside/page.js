@@ -1,51 +1,34 @@
-import ImageComponent from "@/app/components/Image";
 import HeaderOther from "@/app/components/HeaderOther";
-import Link from "next/link";
-import Image from "next/image";
-
+import ImageNavigator from "@/app/components/ImagesNavigator";
+import ImagesList from "@/app/components/ImagesList";
 const Outside = () => {
-  const imageGridWrapper = {
-    overflowX: "hidden", // Hide horizontal scrollbar
-    overflowY: "hidden", // Show vertical scrollbar
-    textAlign: "-webkit-center", // Center images
-    marginTop: "2.5rem",
-  };
+  const category1 = { name: "Other", path: "other" };
+  const category2 = { name: "Cityscape", path: "cityscape" };
+  const category3 = { name: "Concert", path: "concert" };
+
+  const fileNames = [
+    "outside/staring.webp",
+    "outside/penelope.webp",
+    "outside/alot.webp",
+    "outside/lotw.webp",
+    "outside/temagami.webp",
+    "outside/e.webp",
+    "outside/qc.webp",
+    "outside/wxw.webp",
+    "outside/story.webp",
+    "outside/tiny.webp",
+    "outside/close.webp",
+  ];
 
   return (
     <>
       <HeaderOther />
-      <div style={imageGridWrapper}>
-        <ImageComponent fileName="outside/staring.webp" />
-        <ImageComponent fileName="outside/penelope.webp" />
-        <ImageComponent fileName="outside/alot.webp" />
-        <ImageComponent fileName="outside/lotw.webp" />
-        <ImageComponent fileName="outside/temagami.webp" />
-        <ImageComponent fileName="outside/e.webp" />
-        <ImageComponent fileName="outside/qc.webp" />
-        <ImageComponent fileName="outside/wxw.webp" />
-        <ImageComponent fileName="outside/story.webp" />
-        <ImageComponent fileName="outside/tiny.webp" />
-        <ImageComponent fileName="outside/close.webp" />
-      </div>
-      <div>
-        <h3 style={{ textAlign: "center" }}>
-          <Link href="/photography/concert">Concert</Link>,{" "}
-          <Link href="/photography/cityscape">Cityscape</Link>,{" "}
-          <Link href="/photography/other">Other</Link>
-        </h3>{" "}
-        <h3 style={{ textAlign: "center" }}>or</h3>
-        <h3 style={{ textAlign: "center", marginBottom: "5rem" }}>
-          <Link href="/">
-            <Image
-              src="/icons/house-solid.svg"
-              alt="home icon"
-              width={27.5}
-              height={27.5}
-              className="social-icon"
-            />
-          </Link>
-        </h3>
-      </div>
+      <ImagesList fileNames={fileNames} />
+      <ImageNavigator
+        category1={category1}
+        category2={category2}
+        category3={category3}
+      />
     </>
   );
 };
