@@ -25,7 +25,7 @@ const RichText = () => {
           <strong>Artificial Intelligence</strong>{" "}
           <ul style={{ paddingLeft: "15px" }}>
             <li style={{ margin: "0.375rem 0" }}>
-              Cards:{" "}
+              Product:{" "}
               <Link
                 href="https://www.instacard.ai/"
                 rel="noopener noreferrer"
