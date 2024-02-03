@@ -115,31 +115,19 @@ export default function Home() {
             <ul style={{ paddingLeft: "20px" }}>
               <li style={{ margin: "0.5rem 0" }}>
                 Genres:{" "}
-                <Link
-                  target="_blank"
-                  prefetch={true}
-                  href="/photography/cityscape"
-                >
+                <Link prefetch={true} href="/photography/cityscape">
                   Cityscape
                 </Link>
                 ,{" "}
-                <Link
-                  target="_blank"
-                  prefetch={true}
-                  href="/photography/concert"
-                >
+                <Link prefetch={true} href="/photography/concert">
                   Concert
                 </Link>
                 ,{" "}
-                <Link
-                  target="_blank"
-                  prefetch={true}
-                  href="/photography/outside"
-                >
+                <Link prefetch={true} href="/photography/outside">
                   Outside
                 </Link>{" "}
                 &{" "}
-                <Link target="_blank" prefetch={true} href="/photography/other">
+                <Link prefetch={true} href="/photography/other">
                   Other
                 </Link>
               </li>

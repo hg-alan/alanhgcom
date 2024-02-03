@@ -17,7 +17,7 @@ const HeaderOther = () => {
           position: "absolute",
           left: "1rem",
           top: "50%",
-          transform: "translateY(-50%)",
+          transform: "translateY(-40%)",
         }}
       >
         <Link href="/">
