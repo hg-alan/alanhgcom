@@ -17,7 +17,7 @@ export default function Home() {
       {/* Rich text */}
       <div
         style={{
-          padding: "0 1rem 1rem 1rem",
+          padding: "1rem",
         }}
       >
         <p>
@@ -133,7 +133,7 @@ export default function Home() {
           </li>
         </ul>
 
-        <p style={{ marginTop: "2rem" }}>
+        <p style={{ marginTop: "1rem" }}>
           Don&apos;t panic, <br /> Alan{" "}
         </p>
 
@@ -201,7 +201,6 @@ export default function Home() {
             href="https://www.instagram.com/alan.hg/"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ marginRight: "2rem" }}
           >
             <Image
               src="/icons/instagram.svg"
