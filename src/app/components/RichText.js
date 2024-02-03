@@ -25,7 +25,7 @@ const RichText = () => {
           <strong>Artificial Intelligence</strong>{" "}
           <ul style={{ paddingLeft: "15px" }}>
             <li style={{ margin: "0.375rem 0" }}>
-              Generative cards:{" "}
+              Cards:{" "}
               <Link
                 href="https://www.instacard.ai/"
                 rel="noopener noreferrer"
@@ -46,7 +46,7 @@ const RichText = () => {
           <strong>Web Development</strong>
           <ul style={{ paddingLeft: "15px" }}>
             <li style={{ margin: "0.375rem 0" }}>
-              Agency clients:{" "}
+              Agency:{" "}
               <Link
                 href="https://www.rbcroyalbank.com/"
                 rel="noopener noreferrer"
@@ -82,7 +82,7 @@ const RichText = () => {
           </ul>
           <ul style={{ paddingLeft: "15px" }}>
             <li style={{ margin: "0.375rem 0" }}>
-              Freelance clients:{" "}
+              Freelance:{" "}
               <Link
                 href="https://www.pernod-ricard.com/en"
                 rel="noopener noreferrer"

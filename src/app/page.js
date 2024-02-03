@@ -14,8 +14,6 @@ export default function Home() {
       <Header />
       <RichText />
       <SocialIcons />
-
-
     </main>
   );
 }
