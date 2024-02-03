@@ -1,6 +1,7 @@
 import HeaderOther from "@/app/components/HeaderOther";
 import ImageNavigator from "@/app/components/ImagesNavigator";
 import ImagesList from "@/app/components/ImagesList";
+
 const Outside = () => {
   const category1 = { name: "Other", path: "other" };
   const category2 = { name: "Cityscape", path: "cityscape" };

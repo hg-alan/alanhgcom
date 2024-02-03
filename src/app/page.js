@@ -150,7 +150,7 @@ export default function Home() {
               alt="Email"
               width={27.5}
               height={27.5}
-              className="social-icon"
+              className="link-icon"
             />
           </a>
           <a
@@ -164,7 +164,7 @@ export default function Home() {
               alt="LinkedIn"
               width={27.5}
               height={27.5}
-              className="social-icon"
+              className="link-icon"
             />
           </a>
 
@@ -180,7 +180,7 @@ export default function Home() {
               alt="CV"
               width={27.5}
               height={27.5}
-              className="social-icon"
+              className="link-icon"
             />
           </Link>
           <a
@@ -194,7 +194,7 @@ export default function Home() {
               alt="Github"
               width={27.5}
               height={27.5}
-              className="social-icon"
+              className="link-icon"
             />
           </a>
           <a
@@ -207,7 +207,7 @@ export default function Home() {
               alt="Instagram"
               width={27.5}
               height={27.5}
-              className="social-icon"
+              className="link-icon"
             />
           </a>
         </div>

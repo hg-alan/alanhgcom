@@ -26,7 +26,7 @@ const HeaderOther = () => {
             alt="home icon"
             width={27.5}
             height={27.5}
-            className="social-icon"
+            className="link-icon"
           />
         </Link>
       </div>

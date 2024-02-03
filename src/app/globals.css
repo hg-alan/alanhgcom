@@ -22,11 +22,11 @@ a:hover {
   text-decoration: underline;
 }
 
-.social-icon {
+.link-icon {
   transition: transform 0.3s ease;
 }
 
-.social-icon:hover {
+.link-icon:hover {
   transform: scale(1.1); /* Example effect: scale up icon on hover */
 }
 

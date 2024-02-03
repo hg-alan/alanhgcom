@@ -1,11 +1,11 @@
 import HeaderOther from "@/app/components/HeaderOther";
 import ImageNavigator from "@/app/components/ImagesNavigator";
-import ImagesList from "@/app/components/ImagesList"; 
+import ImagesList from "@/app/components/ImagesList";
 
 const Concert = () => {
   const category1 = { name: "Outside", path: "outside" };
   const category2 = { name: "Other", path: "other" };
-  const category3 = { name: "Cityscape", path: "cityscape" }; 
+  const category3 = { name: "Cityscape", path: "cityscape" };
 
   const fileNames = [
     "concert/future.webp",
