@@ -12,7 +12,7 @@ const SocialIcons = () => {
         style={{ marginRight: "2rem" }}
       >
         <Image
-          src="icons/envelope-regular.svg"
+          src="/icons/envelope-regular.svg"
           alt="Email"
           width={27.5}
           height={27.5}
@@ -26,7 +26,7 @@ const SocialIcons = () => {
         style={{ marginRight: "2rem" }}
       >
         <Image
-          src="icons/linkedin-in.svg"
+          src="/icons/linkedin-in.svg"
           alt="LinkedIn"
           width={27.5}
           height={27.5}
@@ -42,7 +42,7 @@ const SocialIcons = () => {
         style={{ marginRight: "2rem" }}
       >
         <Image
-          src="icons/resume.svg"
+          src="/icons/resume.svg"
           alt="CV"
           width={27.5}
           height={27.5}
