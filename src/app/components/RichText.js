@@ -48,6 +48,14 @@ const RichText = () => {
             <li style={{ margin: "0.375rem 0" }}>
               Agency:{" "}
               <Link
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://www.staples.ca/"
+              >
+                Staples
+              </Link>
+              ,{" "}
+              <Link
                 href="https://www.rbcroyalbank.com/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -56,15 +64,7 @@ const RichText = () => {
               </Link>
               ,{" "}
               <Link
-                href="https://www.staples.ca/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Staples
-              </Link>
-              ,{" "}
-              <Link
-                href="https://guardanthealth.com/"
+                href="https://www.ig.ca/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -72,7 +72,7 @@ const RichText = () => {
               </Link>{" "}
               &{" "}
               <Link
-                href="https://www.ig.ca/"
+                href="https://guardanthealth.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
