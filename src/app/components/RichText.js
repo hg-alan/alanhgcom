@@ -68,7 +68,7 @@ const RichText = () => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Guardant Health
+                IG Wealth Management
               </Link>{" "}
               &{" "}
               <Link
@@ -76,7 +76,7 @@ const RichText = () => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                IG Wealth Management
+                Guardant Health
               </Link>
             </li>
           </ul>
