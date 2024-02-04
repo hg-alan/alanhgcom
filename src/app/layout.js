@@ -17,6 +17,18 @@ export default function RootLayout({ children }) {
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
+        <meta itemprop="name" content="Alan HG" />
+        <meta itemprop="description" content="Alan HG's personal website" />
+        <meta itemprop="image" content="/favicon.ico" />
+        <meta property="og:url" content="https://www.alanhg.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Alan HG" />
+        <meta property="og:description" content="Alan HG's personal website" />
+        <meta property="og:image" content="/favicon.ico" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Alan HG" />
+        <meta name="twitter:description" content="Alan HG's personal website" />
+        <meta name="twitter:image" content="/favicon.ico"/>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
