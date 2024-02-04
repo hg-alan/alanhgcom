@@ -25,25 +25,25 @@ export default function RootLayout({ children }) {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/favicons/apple-touch-icon.png"
+          href="/apple-touch-icon.png"
         />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta
           name="msapplication-TileImage"
-          content="/favicons/mstile-144x144.png"
+          content="/mstile-144x144.png"
         />
         <link
           rel="icon"
           sizes="192x192"
-          href="/favicons/android-chrome-192x192.png"
+          href="/android-chrome-192x192.png"
         />
         <link
           rel="icon"
           sizes="512x512"
-          href="/favicons/android-chrome-512x512.png"
+          href="/android-chrome-512x512.png"
         />
-        <link rel="mask-icon" href="/favicons/favicon.svg" color="#5bbad5" />
-        <link rel="manifest" href="/favicons/site.webmanifest" />
+        <link rel="mask-icon" href="/favicon.svg" color="#5bbad5" />
+        <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <body className={ibmPlexSans.className}>
         {children}
