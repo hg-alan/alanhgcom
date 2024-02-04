@@ -48,19 +48,19 @@ const RichText = () => {
             <li style={{ margin: "0.375rem 0" }}>
               Agency:{" "}
               <Link
+                href="https://guardanthealth.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Guardant Health
+              </Link>
+              ,{" "}
+              <Link
                 rel="noopener noreferrer"
                 target="_blank"
                 href="https://www.staples.ca/"
               >
                 Staples
-              </Link>
-              ,{" "}
-              <Link
-                href="https://www.rbcroyalbank.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                RBC
               </Link>
               ,{" "}
               <Link
@@ -72,14 +72,15 @@ const RichText = () => {
               </Link>{" "}
               &{" "}
               <Link
-                href="https://guardanthealth.com/"
+                href="https://www.rbcroyalbank.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Guardant Health
+                RBC Royal Bank
               </Link>
             </li>
           </ul>
+
           <ul style={{ paddingLeft: "15px" }}>
             <li style={{ margin: "0.375rem 0" }}>
               Freelance:{" "}
@@ -92,27 +93,27 @@ const RichText = () => {
               </Link>
               ,{" "}
               <Link
+                href="https://www.suuuperposition.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Suuuperposition
+              </Link>
+              ,{" "}
+              <Link
                 href="https://quartierishome.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 Quartier
-              </Link>
-              ,{" "}
+              </Link>{" "}
+              &{" "}
               <Link
                 href="https://monarmoire.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 Armoire
-              </Link>{" "}
-              &{" "}
-              <Link
-                href="https://www.suuuperposition.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Suuuperposition
               </Link>
             </li>
           </ul>
