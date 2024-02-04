@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
         <link
           rel="icon"
-          href="/favicons/favicon.ico"
+          href="/favicon.ico"
           sizes="16x16 32x32 48x48"
         />
         <link

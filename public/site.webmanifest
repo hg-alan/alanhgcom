@@ -28,7 +28,7 @@
       "sizes": "144x144"
     },
     {
-      "src": "/favicons/favicon.svg",
+      "src": "/favicon.svg",
       "type": "image/svg+xml",
       "sizes": "any"
     }
