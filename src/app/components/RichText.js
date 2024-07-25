@@ -22,43 +22,25 @@ const RichText = () => {
         }}
       >
         <li>
-          <strong>Artificial Intelligence</strong>{" "}
+          <strong>Currently:</strong>{" "}
           <ul style={{ paddingLeft: "15px" }}>
             <li style={{ margin: "0.375rem 0" }}>
-              Product:{" "}
+              Solutions Engineer:{" "}
               <Link
-                href="https://www.instacard.ai/"
+                href="https://www.coveo.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Instacard.ai
+                Coveo
               </Link>{" "}
-            </li>
-            <li style={{ margin: "0.375rem 0" }}>
-              Art:{" "}
-              <Link
-                href="/art/sheep/sheePDF.pdf"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Do Androids Dream of Synthetic Images?
-              </Link>
             </li>
           </ul>
         </li>
         <li style={{ marginTop: "1rem" }}>
-          <strong>Web Development</strong>
+          <strong>Software</strong>
           <ul style={{ paddingLeft: "15px" }}>
             <li style={{ margin: "0.375rem 0" }}>
-              Agency:{" "}
-              <Link
-                href="https://guardanthealth.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Guardant Health
-              </Link>
-              ,{" "}
+              Web Development:{" "}
               <Link
                 rel="noopener noreferrer"
                 target="_blank"
@@ -68,65 +50,49 @@ const RichText = () => {
               </Link>
               ,{" "}
               <Link
-                href="https://www.ig.ca/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                IG Wealth Management
-              </Link>{" "}
-              &{" "}
-              <Link
                 href="https://www.rbcroyalbank.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 RBC Royal Bank
-              </Link>
-            </li>
-          </ul>
-
-          <ul style={{ paddingLeft: "15px" }}>
-            <li style={{ margin: "0.375rem 0" }}>
-              Freelance:{" "}
+              </Link>,{" "}
               <Link
-                href="https://www.pernod-ricard.com/en"
+                href="https://www.igmfinancial.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                IGM Financial
+              </Link>{" "}
+              &{" "}
+              <Link
+                href="https://www.pernod-ricard.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 Pernod Ricard
               </Link>
-              ,{" "}
+              {" "}
+            </li>
+          </ul>
+
+          <ul style={{ paddingLeft: "15px" }}>
+            <li style={{ margin: "0.375rem 0" }}>
+              Product:{" "}
               <Link
-                href="https://www.suuuperposition.com/"
+                href="https://www.instacard.ai/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Suuuperposition
-              </Link>
-              ,{" "}
-              <Link
-                href="https://quartierishome.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Quartier
-              </Link>{" "}
-              &{" "}
-              <Link
-                href="https://monarmoire.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Armoire
+                Instacard.ai
               </Link>
             </li>
           </ul>
         </li>
         <li style={{ marginTop: "1rem" }}>
-          <strong>Photography</strong>
+          <strong>Creative</strong>
           <ul style={{ paddingLeft: "15px" }}>
             <li style={{ margin: "0.375rem 0" }}>
-              Genres:{" "}
+              Photography:{" "}
               <Link href="/photography/cityscape" prefetch={true}>
                 Cityscape
               </Link>
@@ -141,6 +107,16 @@ const RichText = () => {
               &{" "}
               <Link href="/photography/other" prefetch={true}>
                 Other
+              </Link>
+            </li>
+            <li style={{ margin: "0.375rem 0" }}>
+              Generative:{" "}
+              <Link
+                href="/art/sheep/sheePDF.pdf"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Do Androids Dream of Synthetic Images?
               </Link>
             </li>
           </ul>
