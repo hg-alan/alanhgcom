@@ -1,6 +1,6 @@
 import ImageComponent from "./Image/Image"; // Adjust the import path as necessary
 
-const ImagesList = ({ fileNames }) => {
+const ImagesList = ({ fileNames, titles }) => {
   const imageListStyle = {
     overflowX: "hidden", // Hide horizontal scrollbar
     textAlign: "-webkit-center", // Center images
@@ -10,7 +10,7 @@ const ImagesList = ({ fileNames }) => {
   return (
     <div style={imageListStyle}>
       {fileNames.map((fileName, index) => (
-        <ImageComponent key={fileName} fileName={fileName} />
+        <ImageComponent key={fileName} title={titles[index]} fileName={fileName} />
       ))}
     </div>
   );

@@ -1,17 +1,39 @@
-/* ImageComponent.module.css */
+/* Image.module.css */
 .imageWrapper {
-    position: relative;
-    width: 95vw;
-    height: 84vh; 
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75vw;
+  margin-bottom: 10rem; /* Adjust the margin to reduce overall space */
+}
+
+.imageTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem; /* Reduce the space between the title and the image */
+  text-align: center; /* Ensure the title is centered */
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: auto; /* Let the height adjust automatically based on image content */
+}
+
+.responsiveImage {
+  position: relative;
+  width: 100%;
+  height: auto; /* Image height will adjust to maintain aspect ratio */
+  object-fit: contain;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .imageTitle {
+    font-size: 1rem; /* Adjust title size for mobile */
+    margin-bottom: 0.25rem; /* Reduce spacing further for mobile */
   }
-  
-  /* Media query for desktop screens */
-  @media (max-width: 768px) {
-    .imageWrapper {
-      height: 42vh; /* mobile */
-    }
+  .imageWrapper {
+    width: 90vw; /* Adjust width for mobile */
   }
-  
+}

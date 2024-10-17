@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const SocialIcons = () => {
   return (
-    <div style={{ textAlign: "center" }}>
+    <div style={{ textAlign: "center", marginTop: "2rem", marginBottom: "1rem" }}>
       <a
         href="mailto:alan.hg@outlook.com"
         target="_blank"

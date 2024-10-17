@@ -8,6 +8,7 @@ const Header = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        marginBottom: "2rem",
       }}
     >
       <div>
