@@ -137,7 +137,7 @@ const RichText = () => {
             <li style={{ margin: "0.375rem 0" }}>
               Photography:{" "}
               <Link href="/photography/cityscape" prefetch={true}>
-                Cityscape
+                City
               </Link>
               ,{" "}
               <Link href="/photography/concert" prefetch={true}>
@@ -176,7 +176,14 @@ const RichText = () => {
         </li>
       </ul>
       <p style={{ marginTop: "1rem" }}>
-        Don&apos;t panic, <br /> Alan{" "}
+        <Link
+          href="https://upload.wikimedia.org/wikipedia/commons/8/87/Elon_Musk%27s_Tesla_Roadster_%2840143096241%29.jpg"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Don&apos;t panic
+        </Link>
+        , <br /> Alan{" "}
       </p>
     </div>
   );
