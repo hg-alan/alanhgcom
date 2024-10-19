@@ -177,7 +177,7 @@ const RichText = () => {
       </ul>
       <p style={{ marginTop: "1rem" }}>
         <Link
-          href="https://upload.wikimedia.org/wikipedia/commons/8/87/Elon_Musk%27s_Tesla_Roadster_%2840143096241%29.jpg"
+          href="https://www.dont-panic.cc/capi/wp-content/uploads/2018/02/40110298232_4e9c412936_o.jpg"
           rel="noopener noreferrer"
           target="_blank"
         >
