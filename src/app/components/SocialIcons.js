@@ -4,7 +4,9 @@ import Link from "next/link";
 
 const SocialIcons = () => {
   return (
-    <div style={{ textAlign: "center", marginTop: "2rem", marginBottom: "1rem" }}>
+    <div
+      style={{ textAlign: "center", marginTop: "2rem", marginBottom: "1rem" }}
+    >
       <a
         href="mailto:alan.hg@outlook.com"
         target="_blank"
@@ -58,6 +60,21 @@ const SocialIcons = () => {
         <Image
           src="/icons/github.svg"
           alt="Github"
+          width={27.5}
+          height={27.5}
+          className="link-icon"
+        />
+      </a>
+      {/* New Substack Icon */}
+      <a
+        href="https://alanhg42.substack.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ marginRight: "2rem" }}
+      >
+        <Image
+          src="/icons/substack-icon.svg" // Ensure this path is correct
+          alt="Substack"
           width={27.5}
           height={27.5}
           className="link-icon"
