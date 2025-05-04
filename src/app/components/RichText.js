@@ -96,7 +96,7 @@ const RichText = () => {
         </li>
       </ul>
       <p style={{ marginTop: "1rem" }}>
-        <span>"</span>
+        <span>&quot;</span>
         <Link
           href="https://www.dont-panic.cc/capi/wp-content/uploads/2018/02/40110298232_4e9c412936_o.jpg"
           rel="noopener noreferrer"
@@ -104,7 +104,7 @@ const RichText = () => {
         >
           So long and thanks for all the fish
         </Link>
-        <span>"</span>
+        <span>&quot;</span>
         , <br /> Alan{" "}
       </p>
     </div>
