@@ -41,81 +41,11 @@ const RichText = () => {
           <ul style={{ paddingLeft: "15px" }}>
             <li style={{ margin: "0.375rem 0" }}>
               Web Development:{" "}
-              <Link
-                href="https://www.rbcroyalbank.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                RBC Royal Bank
-              </Link>
-              ,{" "}
-              <Link
-                href="https://www.igmfinancial.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                IGM Financial
-              </Link>
-              ,{" "}
-              <Link
-                href="https://www.pernod-ricard.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Pernod Ricard
-              </Link>{" "}
-              &{" "}
-              <Link
-                href="https://guardanthealth.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Guardant Health
-              </Link>
-            </li>
-          </ul>
-          <ul style={{ paddingLeft: "15px" }}>
-            <li style={{ margin: "0.375rem 0" }}>
-              Ecommerce:{" "}
-              <Link
-                href="https://www.staples.ca/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Staples
-              </Link>
-              ,{" "}
-              <Link
-                href="https://shoplostfound.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Lost and Found
-              </Link>
-              ,{" "}
-              <Link
-                href="https://www.instagram.com/neemanaz/?hl=en"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Neema Naz
-              </Link>
-              ,{" "}
-              <Link
-                href="https://www.instagram.com/swooshgod/?hl=en"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Swoosh God
-              </Link>{" "}
-              &{" "}
-              <Link
-                href="https://www.instagram.com/marcustroy/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Marcus Troy
-              </Link>
+              <Link href="https://shoplostfound.com/" rel="noopener noreferrer" target="_blank">Lost and Found</Link>, {" "}
+              <Link href="https://www.instagram.com/neemanaz/?hl=en" rel="noopener noreferrer" target="_blank">Neema Naz</Link>, {" "}
+              <Link href="https://www.pernod-ricard.com/" rel="noopener noreferrer" target="_blank">Pernod Ricard</Link>, {" "}
+              <Link href="https://www.instagram.com/swooshgod/?hl=en" rel="noopener noreferrer" target="_blank">Swoosh God</Link> & {" "}
+              <Link href="https://www.instagram.com/marcustroy/" rel="noopener noreferrer" target="_blank">Marcus Troy</Link>
             </li>
           </ul>
           <ul style={{ paddingLeft: "15px" }}>
@@ -162,27 +92,19 @@ const RichText = () => {
                 Do Androids Dream of Synthetic Images?
               </Link>
             </li>
-            <li style={{ margin: "0.375rem 0" }}>
-              NFT:{" "}
-              <Link
-                href="https://zora.co/@alanhg"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Zora
-              </Link>
-            </li>
           </ul>
         </li>
       </ul>
       <p style={{ marginTop: "1rem" }}>
+        <span>"</span>
         <Link
           href="https://www.dont-panic.cc/capi/wp-content/uploads/2018/02/40110298232_4e9c412936_o.jpg"
           rel="noopener noreferrer"
           target="_blank"
         >
-          &quot;DON&apos;T PANIC&quot;
+          So long and thanks for all the fish
         </Link>
+        <span>"</span>
         , <br /> Alan{" "}
       </p>
     </div>
