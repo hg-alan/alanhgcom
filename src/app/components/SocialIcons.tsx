@@ -39,12 +39,6 @@ const socialLinks: SocialLink[] = [
     label: "Visit Substack blog",
     isExternal: true,
   },
-  {
-    href: "https://www.instagram.com/alan.hg/",
-    icon: "/icons/instagram.svg",
-    label: "Visit Instagram profile",
-    isExternal: true,
-  },
 ];
 
 export default function SocialIcons() {
