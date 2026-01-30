@@ -25,13 +25,13 @@ export default function RichText() {
           Currently:
           <ul style={{ paddingLeft: "15px" }}>
             <li style={{ margin: "0.375rem 0" }}>
-              AI Solutions Engineer:{" "}
+              Solutions Engineer @{" "}
               <Link
-                href="https://www.coveo.com/"
+                href="https://getmosaic.ai/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Coveo [TSX: CVO]
+                Ask-AI
               </Link>
             </li>
           </ul>
