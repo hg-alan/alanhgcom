@@ -41,7 +41,7 @@ export default function RichText() {
           Technical:
           <ul style={{ paddingLeft: "15px" }}>
             <li style={{ margin: "0.375rem 0" }}>
-              Web Development:{" "}
+              Web Dev:{" "}
               <Link
                 href="https://shoplostfound.com/"
                 rel="noopener noreferrer"
