@@ -1,0 +1,45 @@
+/* Image.module.css */
+.imageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75vw;
+  max-width: 1200px;
+  margin: 0 auto 6rem;
+}
+
+.imageTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 2px;
+  background-color: #e5e5e5;
+}
+
+.responsiveImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .imageWrapper {
+    width: 90vw;
+    margin-bottom: 4rem;
+  }
+
+  .imageTitle {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
