@@ -139,7 +139,7 @@ export default function RichText() {
           rel="noopener noreferrer"
           target="_blank"
         >
-          DON'T PANIC
+          DON&apos;T PANIC
         </Link>
         <span>&quot;</span>,
         <br />
