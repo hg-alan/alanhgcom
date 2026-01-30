@@ -135,7 +135,7 @@ export default function RichText() {
         </Link>
         <span>&quot;</span>,
         <br />
-        Alan
+        Alan.
       </p>
     </article>
   );
