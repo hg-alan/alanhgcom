@@ -59,14 +59,6 @@ export default function RichText() {
               </Link>
               ,{" "}
               <Link
-                href="https://www.pernod-ricard.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Pernod Ricard
-              </Link>
-              ,{" "}
-              <Link
                 href="https://www.instagram.com/swooshgod/?hl=en"
                 rel="noopener noreferrer"
                 target="_blank"
