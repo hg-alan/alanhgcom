@@ -47,7 +47,7 @@ export default function RichText() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Lost and Found
+                Lost & Found
               </Link>
               ,{" "}
               <Link
