@@ -10,7 +10,7 @@ export default function Header() {
         justifyContent: "center",
         alignItems: "center",
         marginTop: "1rem",
-        marginBottom: "2rem",
+        marginBottom: "1rem",
       }}
     >
       <Link href="/" aria-label="Go to homepage">
