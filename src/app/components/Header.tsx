@@ -9,6 +9,7 @@ export default function Header() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        marginTop: "1rem",
         marginBottom: "2rem",
       }}
     >
