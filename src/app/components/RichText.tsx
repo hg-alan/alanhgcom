@@ -42,35 +42,19 @@ export default function RichText() {
           <ul style={{ paddingLeft: "15px" }}>
             <li style={{ margin: "0.375rem 0" }}>
               Ecommerce:{" "}
-              <Link
-                href="https://shoplostfound.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
+              <Link href="/ecommerce#lost-and-found" prefetch={true}>
                 Lost & Found
               </Link>
               ,{" "}
-              <Link
-                href="https://www.instagram.com/neemanaz/?hl=en"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
+              <Link href="/ecommerce#neema-naz" prefetch={true}>
                 Neema Naz
               </Link>
               ,{" "}
-              <Link
-                href="https://www.instagram.com/swooshgod/?hl=en"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
+              <Link href="/ecommerce#swoosh-god" prefetch={true}>
                 Swoosh God
               </Link>{" "}
               &{" "}
-              <Link
-                href="https://www.instagram.com/marcustroy/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
+              <Link href="/ecommerce#marcus-troy" prefetch={true}>
                 Marcus Troy
               </Link>
             </li>
