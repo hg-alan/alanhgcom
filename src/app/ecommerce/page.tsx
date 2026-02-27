@@ -74,6 +74,14 @@ export default function EcommercePage() {
             </Link>
             {" / "}
             <Link
+              href="https://www.tiktok.com/@neemanaz"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              TikTok
+            </Link>
+            {" / "}
+            <Link
               href="https://www.instagram.com/neemanaz/"
               rel="noopener noreferrer"
               target="_blank"
