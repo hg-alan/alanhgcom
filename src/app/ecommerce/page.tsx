@@ -18,7 +18,7 @@ export default function EcommercePage() {
           margin: "0 auto",
         }}
       >
-        <p style={{ marginBottom: "2.5rem", fontWeight: "bold", textDecoration: "underline" }}>
+        <p style={{ marginBottom: "2.5rem", fontWeight: "bold", fontSize: "1.25rem" }}>
           25+ Shopify store builds as sole developer, consultant &
           strategist.
         </p>
