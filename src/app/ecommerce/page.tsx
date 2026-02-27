@@ -123,11 +123,11 @@ export default function EcommercePage() {
           </p>
           <p style={{ marginTop: "0.5rem" }}>
             <Link
-              href="https://marcustroy.com/"
+              href="https://monarmoire.com/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              Site
+              Store
             </Link>
             {" / "}
             <Link
