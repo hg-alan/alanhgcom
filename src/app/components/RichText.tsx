@@ -61,18 +61,6 @@ export default function RichText() {
           </ul>
           <ul style={{ paddingLeft: "15px" }}>
             <li style={{ margin: "0.375rem 0" }}>
-              World Model:{" "}
-              <Link
-                href="https://chionyx.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Chionyx
-              </Link>
-            </li>
-          </ul>
-          <ul style={{ paddingLeft: "15px" }}>
-            <li style={{ margin: "0.375rem 0" }}>
               LLM:{" "}
               <Link
                 href="https://www.instacard.ai/"
