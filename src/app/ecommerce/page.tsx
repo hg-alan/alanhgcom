@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Header from "../components/Header";
 import type { Metadata } from "next";
 
@@ -138,6 +139,19 @@ export default function EcommercePage() {
             </Link>
           </p>
         </section>
+
+        <nav style={{ textAlign: "center", marginBottom: "3rem" }}>
+          <Link href="/" aria-label="Return to homepage">
+            <Image
+              src="/icons/house-solid.svg"
+              alt=""
+              aria-hidden="true"
+              width={27.5}
+              height={27.5}
+              className="link-icon"
+            />
+          </Link>
+        </nav>
       </article>
     </>
   );
