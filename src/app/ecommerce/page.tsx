@@ -99,7 +99,7 @@ export default function EcommercePage() {
             Rocky&apos;s AWGE DVD.
           </p>
           <p style={{ marginTop: "0.5rem" }}>
-            Built Shopify store. Merch drops & fulfillment.
+            Custom Shopify storefront, merch drops & strategy consulting.
           </p>
           <p style={{ marginTop: "0.5rem" }}>
             <Link
@@ -127,7 +127,7 @@ export default function EcommercePage() {
             Nike, Levi&apos;s & Nylon Magazine. Featured on Hypebeast.
           </p>
           <p style={{ marginTop: "0.5rem" }}>
-            Built Shopify store. Art prints, apparel & drops.
+            Custom Shopify storefront for art prints & apparel. Strategy consulting & drop support.
           </p>
           <p style={{ marginTop: "0.5rem" }}>
             <Link
