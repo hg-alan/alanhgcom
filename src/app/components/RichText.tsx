@@ -77,18 +77,6 @@ export default function RichText() {
           </ul>
           <ul style={{ paddingLeft: "15px" }}>
             <li style={{ margin: "0.375rem 0" }}>
-              Product:{" "}
-              <Link
-                href="https://www.instacard.ai/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Instacard.ai
-              </Link>
-            </li>
-          </ul>
-          <ul style={{ paddingLeft: "15px" }}>
-            <li style={{ margin: "0.375rem 0" }}>
               World model:{" "}
               <Link
                 href="https://chionyx.com/"
@@ -96,6 +84,18 @@ export default function RichText() {
                 target="_blank"
               >
                 Chionyx
+              </Link>
+            </li>
+          </ul>
+          <ul style={{ paddingLeft: "15px" }}>
+            <li style={{ margin: "0.375rem 0" }}>
+              LLM:{" "}
+              <Link
+                href="https://www.instacard.ai/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Instacard.ai
               </Link>
             </li>
           </ul>
