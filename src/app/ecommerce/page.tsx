@@ -10,8 +10,15 @@ export default function EcommercePage() {
   return (
     <>
       <Header />
-      <article style={{ padding: "1rem", maxWidth: "600px" }}>
-        <p style={{ marginBottom: "2.5rem" }}>
+      <article
+        style={{
+          padding: "1rem",
+          maxWidth: "600px",
+          margin: "0 auto",
+          textAlign: "center",
+        }}
+      >
+        <p style={{ marginBottom: "2.5rem", fontWeight: "bold" }}>
           25+ Shopify store builds as sole developer, consultant &
           strategist.
         </p>
@@ -29,7 +36,7 @@ export default function EcommercePage() {
             including The Real McCoy&apos;s, Beams Plus, Paraboot & Alden.
           </p>
           <p style={{ marginTop: "0.5rem" }}>
-            Sole Shopify developer — theme development, Klaviyo email
+            Sole Shopify developer. Theme development, Klaviyo email
             integration, PLP/PDP UX, search & filtering, cart flows,
             cross-browser fixes & ongoing maintenance. Consulting on agentic
             shopping and ChatGPT/Perplexity product listings.
@@ -57,7 +64,7 @@ export default function EcommercePage() {
             followers. My Estupid Life world tour across 35+ cities.
           </p>
           <p style={{ marginTop: "0.5rem" }}>
-            Built Shopify store — merch, tour dates & content hub.
+            Built Shopify store. Merch, tour dates & content hub.
           </p>
         </section>
 
@@ -69,13 +76,21 @@ export default function EcommercePage() {
           >
             Swoosh God
           </Link>
+          {" "}
+          <Link
+            href="https://open.spotify.com/artist/6jrVq7qYCGFGirqPS31MQ3"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Spotify
+          </Link>
           <p style={{ marginTop: "0.25rem" }}>
             SoundCloud rap pioneer. Discovered by Playboi Carti, collabs with
             Lil Uzi Vert, Juicy J & Rich The Kid. NBA2K soundtrack, A$AP
             Rocky&apos;s AWGE DVD.
           </p>
           <p style={{ marginTop: "0.5rem" }}>
-            Built Shopify store — merch drops & fulfillment.
+            Built Shopify store. Merch drops & fulfillment.
           </p>
         </section>
 
@@ -100,7 +115,7 @@ export default function EcommercePage() {
             .
           </p>
           <p style={{ marginTop: "0.5rem" }}>
-            Built Shopify store — art prints, apparel & drops.
+            Built Shopify store. Art prints, apparel & drops.
           </p>
         </section>
       </article>
