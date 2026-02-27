@@ -127,7 +127,7 @@ export default function EcommercePage() {
             Nike, Levi&apos;s & Nylon Magazine. Featured on Hypebeast.
           </p>
           <p style={{ marginTop: "0.5rem" }}>
-            Custom Shopify storefront for art prints & apparel. Strategy consulting & drop support.
+            Custom Shopify storefront for art prints & apparel. Strategy consulting.
           </p>
           <p style={{ marginTop: "0.5rem" }}>
             <Link
