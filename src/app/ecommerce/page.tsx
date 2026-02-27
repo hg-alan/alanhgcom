@@ -12,7 +12,8 @@ export default function EcommercePage() {
       <Header />
       <article style={{ padding: "1rem", maxWidth: "600px" }}>
         <p>
-          25+ Shopify store builds. Development, strategy & implementation.
+          25+ Shopify store builds as sole developer, consultant &
+          strategist.
         </p>
 
         <ul
@@ -31,9 +32,12 @@ export default function EcommercePage() {
               Lost & Found
             </Link>
             <p style={{ margin: "0.375rem 0" }}>
-              Toronto&apos;s premier menswear boutique. Sole Shopify developer
-              — store build, theme development, integrations & ongoing
-              maintenance.
+              Toronto&apos;s premier menswear boutique on Ossington. 70+
+              brands including The Real McCoy&apos;s, Beams Plus, Paraboot &
+              Alden. Sole Shopify developer — theme development, Klaviyo
+              email integration, PLP/PDP UX, search & filtering, cart flows,
+              cross-browser fixes & ongoing maintenance. Consulting on
+              agentic shopping and ChatGPT/Perplexity product listings.
             </p>
           </li>
 
@@ -46,8 +50,8 @@ export default function EcommercePage() {
               Neema Naz
             </Link>
             <p style={{ margin: "0.375rem 0" }}>
-              Iranian-Canadian comedian, actor & content creator. 800M+ views
-              worldwide, 500K+{" "}
+              Iranian-Canadian comedian, actor & content creator. 800M+
+              views worldwide, 500K+{" "}
               <Link
                 href="https://www.instagram.com/neemanaz/"
                 rel="noopener noreferrer"
@@ -55,8 +59,8 @@ export default function EcommercePage() {
               >
                 Instagram
               </Link>{" "}
-              followers. Built full Shopify storefront — merch, tour dates &
-              content hub.
+              followers. My Estupid Life world tour across 35+ cities. Built
+              Shopify store — merch, tour dates & content hub.
             </p>
           </li>
 
@@ -69,8 +73,10 @@ export default function EcommercePage() {
               Swoosh God
             </Link>
             <p style={{ margin: "0.375rem 0" }}>
-              Nike culture & sneaker content brand. Built Shopify store from
-              scratch — product catalog, drops & fulfillment setup.
+              SoundCloud rap pioneer. Discovered by Playboi Carti, collabs
+              with Lil Uzi Vert, Juicy J & Rich The Kid. NBA2K soundtrack,
+              A$AP Rocky&apos;s AWGE DVD. Built Shopify store — merch drops
+              & fulfillment.
             </p>
           </li>
 
@@ -83,16 +89,16 @@ export default function EcommercePage() {
               Marcus Troy
             </Link>
             <p style={{ margin: "0.375rem 0" }}>
-              Montr&eacute;al-based creative platform — art, culture &
-              lifestyle. Built Shopify store for prints, apparel &{" "}
+              Montr&eacute;al multidisciplinary artist. Work with Converse,
+              Nike, Levi&apos;s & Nylon Magazine. Featured on{" "}
               <Link
-                href="https://www.instagram.com/marcustroy/"
+                href="https://hypebeast.com/tags/marcus-troy"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Instagram
+                Hypebeast
               </Link>
-              -driven drops.
+              . Built Shopify store — art prints, apparel & drops.
             </p>
           </li>
         </ul>
