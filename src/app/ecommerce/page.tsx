@@ -11,10 +11,15 @@ export default function EcommercePage() {
     <>
       <Header />
       <article style={{ padding: "1rem", maxWidth: "600px" }}>
+        <p>
+          25+ Shopify store builds. Development, strategy & implementation.
+        </p>
+
         <ul
           style={{
             listStyleType: "disc",
             listStylePosition: "outside",
+            marginTop: "1rem",
           }}
         >
           <li id="lost-and-found">
@@ -26,8 +31,9 @@ export default function EcommercePage() {
               Lost & Found
             </Link>
             <p style={{ margin: "0.375rem 0" }}>
-              Sole Shopify developer for Toronto&apos;s premier menswear
-              boutique. Quality, craftsmanship, heritage & the classics.
+              Toronto&apos;s premier menswear boutique. Sole Shopify developer
+              — store build, theme development, integrations & ongoing
+              maintenance.
             </p>
           </li>
 
@@ -40,8 +46,8 @@ export default function EcommercePage() {
               Neema Naz
             </Link>
             <p style={{ margin: "0.375rem 0" }}>
-              Shopify development for Iranian-Canadian comedian, actor, and
-              content creator. 800M+ views worldwide, 500K+{" "}
+              Iranian-Canadian comedian, actor & content creator. 800M+ views
+              worldwide, 500K+{" "}
               <Link
                 href="https://www.instagram.com/neemanaz/"
                 rel="noopener noreferrer"
@@ -49,7 +55,8 @@ export default function EcommercePage() {
               >
                 Instagram
               </Link>{" "}
-              followers.
+              followers. Built full Shopify storefront — merch, tour dates &
+              content hub.
             </p>
           </li>
 
@@ -62,7 +69,8 @@ export default function EcommercePage() {
               Swoosh God
             </Link>
             <p style={{ margin: "0.375rem 0" }}>
-              Shopify development for Nike culture and sneaker content brand.
+              Nike culture & sneaker content brand. Built Shopify store from
+              scratch — product catalog, drops & fulfillment setup.
             </p>
           </li>
 
@@ -75,8 +83,8 @@ export default function EcommercePage() {
               Marcus Troy
             </Link>
             <p style={{ margin: "0.375rem 0" }}>
-              Shopify development for Montr&eacute;al-based creative platform.
-              Art, culture, lifestyle &{" "}
+              Montr&eacute;al-based creative platform — art, culture &
+              lifestyle. Built Shopify store for prints, apparel &{" "}
               <Link
                 href="https://www.instagram.com/marcustroy/"
                 rel="noopener noreferrer"
@@ -84,7 +92,7 @@ export default function EcommercePage() {
               >
                 Instagram
               </Link>
-              .
+              -driven drops.
             </p>
           </li>
         </ul>
