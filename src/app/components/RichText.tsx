@@ -87,6 +87,18 @@ export default function RichText() {
               </Link>
             </li>
           </ul>
+          <ul style={{ paddingLeft: "15px" }}>
+            <li style={{ margin: "0.375rem 0" }}>
+              World model:{" "}
+              <Link
+                href="https://chionyx.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Chionyx
+              </Link>
+            </li>
+          </ul>
         </li>
 
         <li style={{ marginTop: "1rem" }}>
