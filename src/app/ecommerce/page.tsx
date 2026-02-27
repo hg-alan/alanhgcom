@@ -15,7 +15,6 @@ export default function EcommercePage() {
           padding: "1rem",
           maxWidth: "600px",
           margin: "0 auto",
-          textAlign: "center",
         }}
       >
         <p style={{ marginBottom: "2.5rem", fontWeight: "bold" }}>
@@ -24,13 +23,7 @@ export default function EcommercePage() {
         </p>
 
         <section id="lost-and-found" style={{ marginBottom: "2.5rem" }}>
-          <Link
-            href="https://shoplostfound.com/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Lost & Found
-          </Link>
+          <p style={{ fontWeight: "bold" }}>Lost & Found</p>
           <p style={{ marginTop: "0.25rem" }}>
             Toronto&apos;s premier menswear boutique on Ossington. 70+ brands
             including The Real McCoy&apos;s, Beams Plus, Paraboot & Alden.
@@ -41,49 +34,56 @@ export default function EcommercePage() {
             cross-browser fixes & ongoing maintenance. Consulting on agentic
             shopping and ChatGPT/Perplexity product listings.
           </p>
+          <p style={{ marginTop: "0.5rem" }}>
+            <Link
+              href="https://shoplostfound.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Store
+            </Link>
+            {" / "}
+            <Link
+              href="https://www.instagram.com/shoplostfound/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Instagram
+            </Link>
+          </p>
         </section>
 
         <section id="neema-naz" style={{ marginBottom: "2.5rem" }}>
-          <Link
-            href="https://neemanaz.com/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Neema Naz
-          </Link>
+          <p style={{ fontWeight: "bold" }}>Neema Naz</p>
           <p style={{ marginTop: "0.25rem" }}>
             Iranian-Canadian comedian, actor & content creator. 800M+ views
-            worldwide, 500K+{" "}
+            worldwide, 500K+ Instagram followers. My Estupid Life world tour
+            across 35+ cities.
+          </p>
+          <p style={{ marginTop: "0.5rem" }}>
+            Built Shopify store. Merch, tour dates & content hub.
+          </p>
+          <p style={{ marginTop: "0.5rem" }}>
+            <Link
+              href="https://neemanaz.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Site
+            </Link>
+            {" / "}
             <Link
               href="https://www.instagram.com/neemanaz/"
               rel="noopener noreferrer"
               target="_blank"
             >
               Instagram
-            </Link>{" "}
-            followers. My Estupid Life world tour across 35+ cities.
-          </p>
-          <p style={{ marginTop: "0.5rem" }}>
-            Built Shopify store. Merch, tour dates & content hub.
+            </Link>
           </p>
         </section>
 
         <section id="swoosh-god" style={{ marginBottom: "2.5rem" }}>
-          <Link
-            href="https://www.instagram.com/swooshgod/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Swoosh God
-          </Link>
-          {" "}
-          <Link
-            href="https://open.spotify.com/artist/6jrVq7qYCGFGirqPS31MQ3"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Spotify
-          </Link>
+          <p style={{ fontWeight: "bold" }}>Swoosh God</p>
           <p style={{ marginTop: "0.25rem" }}>
             SoundCloud rap pioneer. Discovered by Playboi Carti, collabs with
             Lil Uzi Vert, Juicy J & Rich The Kid. NBA2K soundtrack, A$AP
@@ -92,30 +92,50 @@ export default function EcommercePage() {
           <p style={{ marginTop: "0.5rem" }}>
             Built Shopify store. Merch drops & fulfillment.
           </p>
-        </section>
-
-        <section id="marcus-troy" style={{ marginBottom: "2.5rem" }}>
-          <Link
-            href="https://marcustroy.com/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Marcus Troy
-          </Link>
-          <p style={{ marginTop: "0.25rem" }}>
-            Montr&eacute;al multidisciplinary artist. Work with Converse,
-            Nike, Levi&apos;s & Nylon Magazine. Featured on{" "}
+          <p style={{ marginTop: "0.5rem" }}>
             <Link
-              href="https://hypebeast.com/tags/marcus-troy"
+              href="https://www.instagram.com/swooshgod/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              Hypebeast
+              Instagram
             </Link>
-            .
+            {" / "}
+            <Link
+              href="https://open.spotify.com/artist/6jrVq7qYCGFGirqPS31MQ3"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Spotify
+            </Link>
+          </p>
+        </section>
+
+        <section id="marcus-troy" style={{ marginBottom: "2.5rem" }}>
+          <p style={{ fontWeight: "bold" }}>Marcus Troy</p>
+          <p style={{ marginTop: "0.25rem" }}>
+            Montr&eacute;al multidisciplinary artist. Work with Converse,
+            Nike, Levi&apos;s & Nylon Magazine. Featured on Hypebeast.
           </p>
           <p style={{ marginTop: "0.5rem" }}>
             Built Shopify store. Art prints, apparel & drops.
+          </p>
+          <p style={{ marginTop: "0.5rem" }}>
+            <Link
+              href="https://marcustroy.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Site
+            </Link>
+            {" / "}
+            <Link
+              href="https://www.instagram.com/marcustroy/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Instagram
+            </Link>
           </p>
         </section>
       </article>
