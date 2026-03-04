@@ -108,8 +108,6 @@ export default function RichText() {
         </li>
       </ul>
 
-      <p style={{ marginTop: "1rem", color: "blue" }}>elie</p>
-
       <p style={{ marginTop: "1rem" }}>
         <span>&quot;</span>
         <Link
