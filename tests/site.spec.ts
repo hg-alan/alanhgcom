@@ -15,7 +15,10 @@ test('home preserves destinations and shows one Inbox Distiller project link', a
   await expect(page.getByRole('link', { name: 'Inbox Distiller', exact: true })).toHaveCount(1);
   await page.goto('/projects/inbox-distiller');
   await expect(page.getByRole('heading', { name: 'Inbox Distiller', exact: true })).toBeVisible();
-  await expect(page.getByText('The public launch preview is under review.', { exact: false })).toBeVisible();
+  await expect(page.getByText('Public reading and exploration are live at', { exact: false })).toBeVisible();
+  await expect(page.getByText('The briefing example is illustrative; one approved public conclusion is available.', { exact: false })).toBeVisible();
+  await expect(page.getByText('Signups and email delivery remain closed', { exact: false })).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Inbox Distiller', exact: true })).toHaveAttribute('href', 'https://inboxdistiller.ai');
   await page.getByRole('link', { name: 'Back to Alan HG', exact: false }).click();
   await expect(page.getByRole('link', { name: 'Resume', exact: true })).toBeVisible();
   expect(errors).toEqual([]);

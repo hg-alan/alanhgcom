@@ -29,8 +29,11 @@ export default function InboxDistillerProject() {
           can suggest sources, vote, discuss, and choose whether to receive email.
         </p>
         <p style={{ borderTop: "1px solid #c8c8c8", marginTop: "2rem", paddingTop: "1rem" }}>
-          The public launch preview is under review. Public access and live
-          subscription delivery are not open yet.
+          Public reading and exploration are live at{" "}
+          <a href="https://inboxdistiller.ai">Inbox Distiller</a>.
+          The briefing example is illustrative; one approved public conclusion
+          is available. Signups and email delivery remain closed while sender
+          details, the email footer and live delivery checks are completed.
         </p>
       </main>
     </>

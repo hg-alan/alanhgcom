@@ -1,12 +1,12 @@
 # Website, galleries and CV checkpoint
 
-Updated 2026-10-08. Engineering checks passed; protected previews verified, latest revision recorded in the ignored release status; production unchanged. Actual iPhone/Safari acceptance remains pending.
+Updated 2026-10-08. Engineering checks passed; tested website deployed to `alanhg.com` and `www.alanhg.com` after Inbox Distiller HTTPS acceptance. Latest source/deployment and rollback recorded in ignored release receipts. Actual iPhone/Safari acceptance remains pending.
 
 ## Scope and provenance
 
 - Checkout `/Users/alanhg/agent-projects/alanhgcom`, public remote `https://github.com/hg-alan/alanhgcom.git`, branch `codex/website-inbox-gallery`.
 - Base/main `66cee7488dbcfb2fa313f49bc274a43230351637`. No pre-existing local work was overwritten. Original portfolio destinations and employment text preserved.
-- User explicitly requested this phase after Inbox Distiller: add the project, improve every photo folder, update the CV using their supplied PDF. The product description accurately states the public launch preview is under review; live public access and subscription delivery are not open yet.
+- User explicitly requested this phase after Inbox Distiller: add the project, improve every photo folder, update the CV using their supplied PDF. Following the public reading release, the project description identifies the live reading/exploration site, illustrative example and one approved public conclusion. Signups and email delivery remain closed pending sender/footer details and live delivery acceptance.
 - Supplied `/Users/alanhg/Downloads/Alan_Healey-Greene_CV.pdf` copied byte-for-byte to the existing CV URL. SHA256 `a048e4b59ef5649b5bac1a40cec1a67bb49a85306ddcb8eb7739afa2ba310854`; source PDF unchanged. It already includes Inbox Distiller; no employment content rewritten.
 
 ## Implemented
@@ -34,8 +34,8 @@ Actual Impeccable4.5.0 guidance at official pinned commit `778c8a7b71ccd5bfe3ca6
 
 ## Preview and resumption
 
-Vercel `hgalans-projects/alanhgcom-vzpz`, project `prj_cOE5wZoEoiykl9o9wGCQ7kN4heA4`. Existing custom-domain production `dpl_5vXSRDMWiBdRisAXRB8wBUZyYLrd`, base/main above; https://www.alanhg.com remains unchanged. No preview environment variables or integrations are needed by this static portfolio. The immutable staged URL requires Vercel Authentication, while the existing project alias `https://alanhgcom-vzpz-hgalans-projects.vercel.app` serves the updated public portfolio anonymously. `vercel.json` disables automatic deployments for this branch; explicit stages only. `.vercelignore` excludes env files, captures and local evidence.
+Vercel `hgalans-projects/alanhgcom-vzpz`, project `prj_cOE5wZoEoiykl9o9wGCQ7kN4heA4`. Prior custom-domain production `dpl_5vXSRDMWiBdRisAXRB8wBUZyYLrd`, base/main above, is retained as the original rollback target. The tested website is now published on `alanhg.com` (redirects to `www`) and `www.alanhg.com`; exact current deployment and checks are in ignored release receipts. No preview environment variables or integrations are needed by this static portfolio. Immutable staged URLs require Vercel Authentication, while the existing project alias `https://alanhgcom-vzpz-hgalans-projects.vercel.app` serves the updated public portfolio anonymously. `vercel.json` disables automatic deployments for this branch; explicit stages only. `.vercelignore` excludes env files, captures and local evidence.
 
 Final SHA, actual preview and upload/provenance receipts are stored in ignored `.release-evidence/release-status.json` after deployment. Public PR records the source revision. Never push or merge main as part of preview preparation.
 
-Resume: `npm run build && npm run lint && npm run typecheck`; serve `npx next start -H 127.0.0.1 -p 3130`; `WEBSITE_TEST_URL=http://127.0.0.1:3130 npm run test:e2e`. The latest agent-owned loopback server uses3130; preserve unrelated sessions. Hosted acceptance verifies all four galleries, optimized images, project text and exact CV. Final custom-domain publication follows Inbox Distiller acceptance and the owner's approval boundary; no claim of custom-domain change or actual-device acceptance is made here.
+Resume: `npm run build && npm run lint && npm run typecheck`; serve `npx next start -H 127.0.0.1 -p 3130`; `WEBSITE_TEST_URL=http://127.0.0.1:3130 npm run test:e2e`. The latest agent-owned loopback server uses3130; preserve unrelated sessions. Hosted acceptance verifies all four galleries, optimized images, project text and exact CV. Website publication is complete; Inbox Distiller email acceptance remains a separate release gate. No actual-device acceptance is claimed here.
