@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function RichText() {
   return (
-    <article style={{ padding: "1rem", maxWidth: "600px" }}>
+    <article className="home-content">
       <p>
         This site exists in the <em>spirit</em> of &quot;
         <Link
@@ -15,16 +15,11 @@ export default function RichText() {
         &quot;:
       </p>
 
-      <ul
-        style={{
-          listStyleType: "disc",
-          listStylePosition: "outside",
-        }}
-      >
+      <ul className="home-sections">
         <li>
-          Currently:
-          <ul style={{ paddingLeft: "15px" }}>
-            <li style={{ margin: "0.375rem 0" }}>
+          Currently:{" "}
+          <ul>
+            <li>
               Solutions Engineer @{" "}
               <Link
                 href="https://getmosaic.ai"
@@ -37,10 +32,10 @@ export default function RichText() {
           </ul>
         </li>
 
-        <li style={{ marginTop: "1rem" }}>
+        <li>
           Technical:
-          <ul style={{ paddingLeft: "15px" }}>
-            <li style={{ margin: "0.375rem 0" }}>
+          <ul>
+            <li>
               LLM + Jev:{" "}
               <Link
                 href="https://inboxdistiller.ai"
@@ -51,8 +46,8 @@ export default function RichText() {
               </Link>
             </li>
           </ul>
-          <ul style={{ paddingLeft: "15px" }}>
-            <li style={{ margin: "0.375rem 0" }}>
+          <ul>
+            <li>
               Ecommerce:{" "}
               <Link href="/ecommerce#lost-and-found" prefetch={true}>
                 Lost & Found
@@ -73,10 +68,10 @@ export default function RichText() {
           </ul>
         </li>
 
-        <li style={{ marginTop: "1rem" }}>
+        <li>
           Creative:
-          <ul style={{ paddingLeft: "15px" }}>
-            <li style={{ margin: "0.375rem 0" }}>
+          <ul>
+            <li>
               Photography:{" "}
               <Link href="/photography/cityscape" prefetch={true}>
                 City
@@ -94,7 +89,7 @@ export default function RichText() {
                 Other
               </Link>
             </li>
-            <li style={{ margin: "0.375rem 0" }}>
+            <li>
               Book:{" "}
               <Link
                 href="/art/sheep/sheePDF.pdf"
@@ -108,7 +103,7 @@ export default function RichText() {
         </li>
       </ul>
 
-      <p style={{ marginTop: "1rem" }}>
+      <p className="home-signoff">
         <span>&quot;</span>
         <Link
           href="https://www.dont-panic.cc/capi/wp-content/uploads/2018/02/40110298232_4e9c412936_o.jpg"
@@ -118,7 +113,7 @@ export default function RichText() {
           DON&apos;T PANIC
         </Link>
         <span>&quot;</span>,
-        <br />
+        <br />{" "}
         Alan
       </p>
     </article>

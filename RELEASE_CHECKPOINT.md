@@ -1,6 +1,6 @@
 # Website, galleries and CV checkpoint
 
-Updated 2026-10-08. Engineering checks passed; protected preview pending; production unchanged. Actual iPhone/Safari acceptance remains pending.
+Updated 2026-10-08. Engineering checks passed; protected previews verified, latest revision recorded in the ignored release status; production unchanged. Actual iPhone/Safari acceptance remains pending.
 
 ## Scope and provenance
 
@@ -10,6 +10,8 @@ Updated 2026-10-08. Engineering checks passed; protected preview pending; produc
 - Supplied `/Users/alanhg/Downloads/Alan_Healey-Greene_CV.pdf` copied byte-for-byte to the existing CV URL. SHA256 `a048e4b59ef5649b5bac1a40cec1a67bb49a85306ddcb8eb7739afa2ba310854`; source PDF unchanged. It already includes Inbox Distiller; no employment content rewritten.
 
 ## Implemented
+
+Homepage: one “LLM + Jev: Inbox Distiller” link appears above Ecommerce, with Mosaic AI named and linked. The footer now uses visible Email, LinkedIn, Resume, GitHub and Substack labels, preserving every destination and the supplied PDF. The links stay on one line with 44px tap targets. Compact portrait spacing and a short-landscape layout fit the tested viewports without hiding content or disabling scrolling. Enlarged accessibility text and arbitrarily small windows can still scroll; universal no-scroll behavior is not claimed.
 
 Four responsive gallery overviews (City22, Concert27, Outside18, Other21), category navigation at the top, correct intrinsic dimensions and image-aware alternative text, an uncropped full-image viewer, previous/next, keyboard and touch navigation, Escape/Close/focus return, browser history, copyable photo links and failure recovery. Screen readers receive the current title/position after a change. No autoplay, accounts or additional product areas.
 
@@ -21,6 +23,7 @@ Actual Impeccable4.5.0 guidance at official pinned commit `778c8a7b71ccd5bfe3ca6
 
 - Production build, TypeScript and ESLint:pass; lint has zero errors/warnings.
 - Twelve production-build Playwright cases passed on desktop Chrome and phone emulation, one worker, no retries. Includes gallery counts, navigation, deep links/history, focus, swipe, portrait fit,320px+200%text, failed images/copy fallback, unknown category404s, preserved homepage destinations, new project page, and served CV checksum.
+- The footer refinement reran that suite and added a nine-viewport homepage check: 320×480, 320×568, 375×550, 390×664, 430×745, 568×300, 667×300, 844×300 and 1280×800. Thirteen cases passed; the duplicate matrix is intentionally skipped in the phone project. The matrix verifies no page overflow at normal text size, one footer row and 44px targets. First-pass failures at the two smallest viewports were fixed through spacing and layout, then the full suite passed. Evidence: `website-text-footer-*` logs and `footer-*` screenshots.
 - Runtime dependency audit:zero findings. Unsupported Next14.1/React18 upgraded within the existing stack to Next16.3.8/React19.3, maintained Node22/24. Compatible dependency patches applied. Full audit retains5development-tool nodes from one unpatched braces3.0.3 deeply nested glob denial-of-service advisory, through ESLint's fast-glob/micromatch. The app accepts no glob/build configuration input; do not use npm audit's suggested downgrade to unsupported Next14.
 - Original image/CV integrity recorded in ignored `.release-evidence/asset-integrity.json`; test logs, rendered screenshots, actual image-delivery measurements, dependency audits and independent review are in that same ignored folder.
 

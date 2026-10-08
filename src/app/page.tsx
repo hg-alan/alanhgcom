@@ -1,19 +1,13 @@
 import Header from "./components/Header";
 import RichText from "./components/RichText";
-import SocialIcons from "./components/SocialIcons";
+import SocialLinks from "./components/SocialLinks";
 
 export default function Home() {
   return (
-    <main
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
+    <main className="home">
       <Header />
       <RichText />
-      <SocialIcons />
+      <SocialLinks />
     </main>
   );
 }
