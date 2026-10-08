@@ -1,57 +1,54 @@
-.gallery {
-  width: min(1180px, 92vw);
-  margin: 2rem auto 4rem;
-}
-.galleryHeader { margin-bottom: 1.5rem; }
-.galleryHeader h1 { margin: 0; font-size: 2rem; font-weight: 400; }
-.galleryHeader p { margin: .35rem 0 1.25rem; }
-.categoryNav { display: flex; flex-wrap: wrap; gap: .25rem 1.5rem; padding: .5rem 0; border-block: 1px solid #c4c4c4; }
+.gallery { width: calc(100% - 24px); margin: 0 auto 1rem; }
+.galleryHeader { margin-bottom: .75rem; }
+.galleryNavigation { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.galleryHome { color: var(--color-text); white-space: nowrap; min-height: 44px; display: inline-flex; align-items: center; }
+.categoryNav { display: flex; flex-wrap: wrap; gap: 0 clamp(.6rem, 2vw, 1.5rem); font-size: .875rem; }
 .categoryNav a { display: inline-flex; align-items: center; min-height: 44px; text-underline-offset: .25em; }
-.categoryNav a[aria-current="page"] { color: var(--color-text); text-decoration: underline; text-decoration-thickness: 2px; }
-.galleryHint { margin: 1rem 0 1.5rem; font-size: .9375rem; }
-.grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2rem 1.5rem; }
-.imageWrapper { margin: 0; min-width: 0; }
+.categoryNav a[aria-current="page"] { color: var(--color-text); text-decoration: underline; }
+.galleryHeading { display: flex; align-items: baseline; gap: .75rem; }
+.galleryHeading h1 { margin: 0; font-size: 1rem; font-weight: 400; }
+.galleryHeading p { margin: 0; font-size: .8125rem; color: #595959; }
+.grid { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 1rem .5rem; }
+.imageWrapper { margin: 0; min-width: 0; flex: var(--photo-ratio) 0 calc(var(--photo-ratio) * clamp(6rem, 14vw, 13rem)); max-width: min(100%, calc(var(--photo-ratio) * 22rem)); }
 .imageLink { display: block; color: var(--color-text); text-underline-offset: .2em; }
 .imageLink:hover { color: var(--color-link); }
-.imageContainer { width: 100%; aspect-ratio: 3 / 2; display: flex; align-items: center; justify-content: center; background: #e6e6e6; }
+.imageContainer { width: 100%; aspect-ratio: var(--photo-ratio); display: flex; align-items: center; justify-content: center; }
 .responsiveImage { display: block; width: 100%; height: 100%; object-fit: contain; }
-.imageTitle { margin-top: .7rem; font-size: 1rem; overflow-wrap: anywhere; }
-.previewError { padding: 1rem; text-align: center; }
-.galleryFooter { display: flex; gap: 2rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #c4c4c4; }
+.imageTitle { margin-top: .2rem; font-size: .75rem; line-height: 1.4; overflow-wrap: anywhere; }
+.previewError { padding: .5rem; text-align: center; font-size: .875rem; }
+.galleryFooter { display: flex; gap: 1.5rem; margin-top: 1rem; font-size: .875rem; }
 .galleryFooter a { min-height: 44px; display: inline-flex; align-items: center; }
-.viewer { position: fixed; inset: 0; width: 100%; height: 100dvh; max-width: none; max-height: none; margin: 0; border: 0; padding: max(1rem, env(safe-area-inset-top)) max(1rem, env(safe-area-inset-right)) max(1rem, env(safe-area-inset-bottom)) max(1rem, env(safe-area-inset-left)); background: #191919; color: #f2f2f2; overflow: auto; }
-.viewer[open] { display: grid; grid-template-rows: auto minmax(min(20dvh, 8rem), 1fr) auto; gap: .75rem; }
-.viewer::backdrop { background: #191919; }
-.viewer ::selection { background: #f2f2f2; color: #191919; }
-.viewerHeader { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
-.viewerHeader h2 { margin: 0; font-size: 1.125rem; font-weight: 400; overflow-wrap: anywhere; }
-.viewerHeader p { margin: .2rem 0 0; font-size: .875rem; font-variant-numeric: tabular-nums; }
-.viewer button, .viewerActions a { font: inherit; min-height: 44px; padding: .5rem .9rem; border: 1px solid #777; border-radius: 2px; color: inherit; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; text-underline-offset: .2em; }
-.viewer button:hover:not(:disabled), .viewerActions a:hover { background: #333; color: #fff; }
-.viewer button:disabled { opacity: .4; cursor: default; }
-.viewer :focus-visible { outline: 2px solid #f2f2f2; outline-offset: 3px; }
+.viewer { position: fixed; inset: 0; width: 100%; height: 100dvh; max-width: none; max-height: none; margin: 0; border: 0; padding: 0; background: #101010; color: #f2f2f2; overflow: auto; }
+.viewer[open] { display: grid; grid-template-rows: minmax(min(20dvh, 8rem), 1fr) auto; }
+.viewer::backdrop { background: #101010; }
+.viewer ::selection { background: #f2f2f2; color: #101010; }
 .stage { min-height: 0; display: flex; align-items: center; justify-content: center; touch-action: pan-y pinch-zoom; }
 .fullImage { display: block; width: 100%; height: 100%; object-fit: contain; }
-.viewerFooter { text-align: center; }
-.viewerActions { display: flex; justify-content: center; align-items: center; gap: .5rem; flex-wrap: wrap; }
-.viewerHint { margin: .5rem 0 0; font-size: .8125rem; color: #ccc; }
-.shareStatus { margin: .35rem 0 0; font-size: .9375rem; }
+.viewerFooter { padding: 0 max(.5rem, env(safe-area-inset-right)) env(safe-area-inset-bottom) max(.5rem, env(safe-area-inset-left)); }
+.viewerBar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.viewerCaption { min-width: 0; display: flex; align-items: baseline; gap: .75rem; }
+.viewerCaption h2 { margin: 0; font-size: .875rem; font-weight: 400; line-height: 1.3; overflow-wrap: anywhere; }
+.viewerCaption p { margin: 0; color: #bcbcbc; font-size: .75rem; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.viewerActions { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; flex-shrink: 0; gap: .25rem; }
+.viewer button, .viewerActions a { font: inherit; font-size: .8125rem; min-height: 44px; min-width: 44px; padding: .25rem .5rem; border: 0; border-radius: 0; color: inherit; background: transparent; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; text-underline-offset: .2em; }
+.viewer button:hover:not(:disabled), .viewerActions a:hover { color: #fff; text-decoration: underline; }
+.viewer button:disabled { color: #626262; cursor: default; }
+.viewer :focus-visible { outline: 1px solid #f2f2f2; outline-offset: -3px; }
+.shareStatus { margin: 0 0 .5rem; font-size: .8125rem; text-align: center; }
 .shareStatus:empty { display: none; }
-.copyField { display: grid; gap: .25rem; margin: .5rem auto 0; max-width: 40rem; text-align: left; }
+.copyField { display: grid; gap: .25rem; margin: .5rem auto; max-width: 40rem; text-align: left; }
 .copyField input { width: 100%; font: inherit; padding: .5rem; }
 .imageError { text-align: center; padding: 1rem; }
 .imageError a { color: inherit; text-decoration: underline; }
-@media (min-width: 720px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (min-width: 1120px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (max-width: 600px) {
-  .viewerHeader { flex-wrap: wrap; gap: .35rem; }
-  .viewerHeader > div { order: 1; flex-basis: 100%; display: flex; align-items: baseline; justify-content: space-between; gap: .75rem; min-width: 0; }
-  .viewerHeader h2 { font-size: 1rem; }
-  .viewerHeader p { flex-shrink: 0; }
-  .viewerHeader > button { margin-left: auto; padding: .25rem .5rem; }
-  .viewerActions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); font-size: .875rem; gap: .3rem; }
-  .viewerActions button, .viewerActions a { min-width: 0; padding: .35rem .2rem; overflow-wrap: anywhere; }
+  .galleryNavigation { gap: .5rem; }
+  .viewerBar { flex-direction: column; gap: 0; }
+  .viewerCaption { align-self: stretch; justify-content: space-between; padding-top: .35rem; }
+  .viewerActions { flex-shrink: 1; }
 }
-@media (max-height: 450px) { .viewer { padding: .5rem; } .viewer[open] { gap: .35rem; } .viewerHeader p, .viewerHint { display: none; } }
-@media (max-width: 400px) { .viewerHeader > div { display: block; } }
+@media (max-height: 450px) and (min-width: 560px) {
+  .viewerCaption { gap: .5rem; }
+  .viewerCaption h2 { font-size: .75rem; }
+  .viewerActions { gap: 0; }
+}
 @media (prefers-reduced-motion: reduce) { .gallery a, .viewer a { transition: none; } }

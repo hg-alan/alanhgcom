@@ -127,15 +127,22 @@ export default function ImagesList({ photos }: { photos: Photo[] }) {
         if (event.key === "ArrowLeft") { event.preventDefault(); setPhoto(selected - 1); }
       }}>
       {photo ? <>
-        <header className={styles.viewerHeader}><div role="status" aria-label="Current photograph" aria-live="polite" aria-atomic="true"><h2 id="photo-title">{photo.title}</h2><p id="photo-count">{selected + 1} of {photos.length}</p></div><button ref={closeButton} onClick={close}>Close</button></header>
         <div className={styles.stage}
           onPointerDown={event => { if (event.pointerType === "touch") swipe.current = { x: event.clientX, y: event.clientY, id: event.pointerId }; }}
           onPointerUp={endSwipe} onPointerCancel={() => { swipe.current = null; }}>
           <FullPhoto key={photo.fileName} photo={photo}/>
         </div>
         <footer className={styles.viewerFooter}>
-          <div className={styles.viewerActions}><button onClick={() => setPhoto(selected - 1)} disabled={selected === 0}>Previous</button><button onClick={() => setPhoto(selected + 1)} disabled={selected === photos.length - 1}>Next</button><button onClick={copyLink}>Copy link</button><a href={`/art/photography/${photo.fileName}`} target="_blank" rel="noopener noreferrer">Original image</a></div>
-          <p className={styles.viewerHint}>Use arrow keys or swipe to browse.</p>
+          <div className={styles.viewerBar}>
+            <div className={styles.viewerCaption} role="status" aria-label="Current photograph" aria-live="polite" aria-atomic="true"><h2 id="photo-title">{photo.title}</h2><p id="photo-count">{selected + 1} of {photos.length}</p></div>
+            <div className={styles.viewerActions}>
+              <button aria-label="Previous" title="Previous photograph (left arrow)" onClick={() => setPhoto(selected - 1)} disabled={selected === 0}><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="m14 5-7 7 7 7"/></svg></button>
+              <button aria-label="Next" title="Next photograph (right arrow)" onClick={() => setPhoto(selected + 1)} disabled={selected === photos.length - 1}><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="m10 5 7 7-7 7"/></svg></button>
+              <button aria-label="Copy link" onClick={copyLink}>Link</button>
+              <a aria-label="Original image" href={`/art/photography/${photo.fileName}`} target="_blank" rel="noopener noreferrer">Original</a>
+              <button ref={closeButton} onClick={close}>Close</button>
+            </div>
+          </div>
           <p className={styles.shareStatus} role="status" aria-label="Link sharing">{shareMessage}</p>
           {linkFallback ? <label className={styles.copyField}>Photo link<input readOnly value={window.location.href} onFocus={event => event.currentTarget.select()}/></label> : null}
         </footer>

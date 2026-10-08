@@ -121,7 +121,8 @@ test('portrait photos fit the viewport uncropped and touch browsing works', asyn
 
 test('small screens, large text and unavailable images retain usable controls', async ({ page }, info) => {
   await page.setViewportSize({ width: 320, height: 740 });
-  await page.goto('/photography/outside');
+  // The interaction depends on the gallery DOM, not background thumbnails or prefetch completion.
+  await page.goto('/photography/outside', { waitUntil: 'domcontentloaded' });
   await page.addStyleTag({ content: 'html { font-size: 200% !important; }' });
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.locator('[data-photo="outside/staring.webp"]').click();
@@ -138,11 +139,46 @@ test('small screens, large text and unavailable images retain usable controls', 
     if (new URL(route.request().url()).searchParams.get('url')?.includes('/other/budget.webp')) return route.abort();
     return route.continue();
   });
-  await page.goto('/photography/other#photo=budget');
+  await page.goto('/photography/other#photo=budget', { waitUntil: 'domcontentloaded' });
   const dialog = page.getByRole('dialog');
   await expect(dialog.getByText('This preview couldn’t load.', { exact: true })).toBeVisible();
   await expect(dialog.getByRole('link', { name: 'Open the original photograph', exact: true })).toHaveAttribute('href', '/art/photography/other/budget.webp');
   await dialog.getByRole('button', { name: 'Next', exact: true }).click();
   await expect(dialog.getByRole('heading')).toHaveText('"BIG FOE"');
   await expect(dialog.getByText('This preview couldn’t load.')).toHaveCount(0);
+});
+
+test('photographs use the viewport with a compact control strip', async ({ page }, info) => {
+  test.skip(info.project.name !== 'desktop', 'Explicit viewer viewport matrix runs once.');
+  for (const [width, height] of [[1280, 800], [390, 664], [844, 390], [320, 480]]) {
+    await page.setViewportSize({ width, height });
+    await page.goto('/photography/concert#photo=carti');
+    const dialog = page.getByRole('dialog');
+    const image = dialog.locator('img');
+    await expect(dialog).toBeVisible();
+    await expect.poll(() => image.evaluate((element: HTMLImageElement) => element.complete && element.naturalWidth > 0)).toBe(true);
+    const layout = await dialog.evaluate(element => {
+      const image = element.querySelector('img')!.getBoundingClientRect();
+      const footer = element.querySelector('footer')!.getBoundingClientRect();
+      return { imageTop: image.top, imageLeft: image.left, imageWidth: image.width, imageHeight: image.height, footerHeight: footer.height, footerBottom: footer.bottom, scrollHeight: element.scrollHeight, width: element.scrollWidth };
+    });
+    expect(layout.imageTop).toBe(0);
+    expect(layout.imageLeft).toBe(0);
+    expect(layout.imageWidth).toBe(width);
+    expect(layout.imageHeight).toBeGreaterThanOrEqual(height - 80);
+    expect(layout.footerHeight).toBeLessThanOrEqual(80);
+    expect(layout.footerBottom).toBeLessThanOrEqual(height);
+    expect(layout.scrollHeight).toBeLessThanOrEqual(height);
+    expect(layout.width).toBeLessThanOrEqual(width);
+    for (const label of ['Previous', 'Next', 'Copy link', 'Close']) await expect(dialog.getByRole('button', { name: label, exact: true })).toBeInViewport();
+    if (width === 390 || width === 1280) await page.screenshot({ path: `.release-evidence/gallery-immersive-${width}.png` });
+  }
+  for (const width of [1280, 390]) {
+    await page.setViewportSize({ width, height: 800 });
+    await page.goto('/photography/cityscape');
+    const first = page.locator('[data-photo]').first();
+    await expect(first).toBeVisible();
+    expect((await first.boundingBox())!.y).toBeLessThan(110);
+    await page.screenshot({ path: `.release-evidence/gallery-contact-sheet-${width}.png` });
+  }
 });

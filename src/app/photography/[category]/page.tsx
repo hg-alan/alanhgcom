@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Header from "@/app/components/Header";
 import ImageNavigator from "@/app/components/ImagesNavigator";
 import ImagesList from "@/app/components/ImagesList";
 import Link from "next/link";
@@ -47,14 +46,13 @@ export default async function PhotographyPage({ params }: PageProps) {
   const categories = getAllSlugs().map(slug => getGallery(slug)!);
 
   return (
-    <>
-      <Header />
       <main id="photography" className={styles.gallery}>
-        <header className={styles.galleryHeader}><h1>{gallery.name}</h1><p>{gallery.photos.length} photographs</p><ImageNavigator categories={categories} currentSlug={category}/></header>
-        <p className={styles.galleryHint}>Select a photograph to see the full image.</p>
+        <header className={styles.galleryHeader}>
+          <div className={styles.galleryNavigation}><Link href="/" className={styles.galleryHome}>Alan HG</Link><ImageNavigator categories={categories} currentSlug={category}/></div>
+          <div className={styles.galleryHeading}><h1>{gallery.name}</h1><p>{gallery.photos.length} photographs</p></div>
+        </header>
         <ImagesList photos={gallery.photos} />
         <footer className={styles.galleryFooter}><a href="#photography">Back to top</a><Link href="/">Home</Link></footer>
       </main>
-    </>
   );
 }
