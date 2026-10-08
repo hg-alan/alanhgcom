@@ -27,11 +27,11 @@ export default function RichText() {
             <li style={{ margin: "0.375rem 0" }}>
               Solutions Engineer @{" "}
               <Link
-                href="https://getmosaic.ai/"
+                href="https://getmosaic.ai"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Ask-AI
+                Mosaic AI
               </Link>
             </li>
           </ul>
@@ -65,13 +65,13 @@ export default function RichText() {
           </ul>
           <ul style={{ paddingLeft: "15px" }}>
             <li style={{ margin: "0.375rem 0" }}>
-              LLM:{" "}
+              LLM project:{" "}
               <Link
-                href="https://www.instacard.ai/"
+                href="https://inboxdistiller.ai"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Instacard.ai
+                Inbox Distiller
               </Link>
             </li>
           </ul>

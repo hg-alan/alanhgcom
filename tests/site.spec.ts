@@ -7,7 +7,12 @@ test('home preserves existing destinations and opens the Inbox Distiller project
   await page.goto('/');
   await expect(page.getByRole('link', { name: 'Lost & Found', exact: true })).toHaveAttribute('href', '/ecommerce#lost-and-found');
   await expect(page.getByRole('link', { name: 'City', exact: true })).toHaveAttribute('href', '/photography/cityscape');
-  await page.getByRole('link', { name: 'Inbox Distiller', exact: true }).click();
+  await expect(page.getByRole('link', { name: 'Mosaic AI', exact: true })).toHaveAttribute('href', 'https://getmosaic.ai');
+  const llmLink = page.locator('a[href="https://inboxdistiller.ai"]');
+  await expect(llmLink).toHaveText('Inbox Distiller');
+  await expect(llmLink.locator('..')).toHaveText('LLM project: Inbox Distiller');
+  await expect(page.getByRole('link', { name: /Instacard|Ask-AI/i })).toHaveCount(0);
+  await page.locator('a[href="/projects/inbox-distiller"]').click();
   await expect(page.getByRole('heading', { name: 'Inbox Distiller', exact: true })).toBeVisible();
   await expect(page.getByText('The public launch preview is under review.', { exact: false })).toBeVisible();
   await page.getByRole('link', { name: 'Back to Alan HG', exact: false }).click();
