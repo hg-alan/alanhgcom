@@ -3,11 +3,11 @@ import { notFound } from "next/navigation";
 import Header from "@/app/components/Header";
 import ImageNavigator from "@/app/components/ImagesNavigator";
 import ImagesList from "@/app/components/ImagesList";
+import Link from "next/link";
+import styles from "@/app/components/Image/Image.module.css";
 import {
   getGallery,
-  getOtherCategories,
   getAllSlugs,
-  type CategorySlug,
 } from "@/data/photography";
 
 interface PageProps {
@@ -44,13 +44,17 @@ export default async function PhotographyPage({ params }: PageProps) {
     notFound();
   }
 
-  const otherCategories = getOtherCategories(category as CategorySlug);
+  const categories = getAllSlugs().map(slug => getGallery(slug)!);
 
   return (
     <>
       <Header />
-      <ImagesList photos={gallery.photos} />
-      <ImageNavigator categories={otherCategories} />
+      <main id="photography" className={styles.gallery}>
+        <header className={styles.galleryHeader}><h1>{gallery.name}</h1><p>{gallery.photos.length} photographs</p><ImageNavigator categories={categories} currentSlug={category}/></header>
+        <p className={styles.galleryHint}>Select a photograph to see the full image.</p>
+        <ImagesList photos={gallery.photos} />
+        <footer className={styles.galleryFooter}><a href="#photography">Back to top</a><Link href="/">Home</Link></footer>
+      </main>
     </>
   );
 }

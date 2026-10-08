@@ -1,33 +1,30 @@
-import styles from "./Image.module.css";
+"use client";
+
+import { useState, type MouseEventHandler, type RefCallback } from "react";
 import Image from "next/image";
+import type { Photo } from "@/data/photography";
+import styles from "./Image.module.css";
 
 interface ImageComponentProps {
-  title: string;
-  fileName: string;
-  alt: string;
+  photo: Photo;
+  priority: boolean;
+  onOpen: MouseEventHandler<HTMLAnchorElement>;
+  anchorRef: RefCallback<HTMLAnchorElement>;
 }
 
-export default function ImageComponent({
-  title,
-  fileName,
-  alt,
-}: ImageComponentProps) {
-  return (
-    <figure className={styles.imageWrapper}>
-      <figcaption className={styles.imageTitle}>{title}</figcaption>
+export default function ImageComponent({ photo, priority, onOpen, anchorRef }: ImageComponentProps) {
+  const [failed, setFailed] = useState(false);
+  return <figure className={styles.imageWrapper}>
+    <a ref={anchorRef} className={styles.imageLink} href={`/art/photography/${photo.fileName}`} onClick={onOpen}
+      aria-label={`View ${photo.title}`} aria-haspopup="dialog" data-photo={photo.fileName}>
       <div className={styles.imageContainer}>
-        <Image
-          className={styles.responsiveImage}
-          src={`/art/photography/${fileName}`}
-          alt={alt}
-          width={1500}
-          height={1000}
-          sizes="(max-width: 768px) 90vw, 75vw"
-          placeholder="blur"
-          blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwMCIgaGVpZ2h0PSIxMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNlNWU1ZTUiLz48L3N2Zz4="
-          loading="lazy"
-        />
+        {failed ? <span className={styles.previewError}>Preview unavailable. Open photograph.</span> : <Image
+          className={styles.responsiveImage} src={`/art/photography/${photo.fileName}`} alt={photo.alt}
+          width={photo.width} height={photo.height} sizes="(min-width: 1120px) 370px, (min-width: 720px) 46vw, 92vw"
+          preload={priority} loading={priority ? undefined : "lazy"} onError={() => setFailed(true)}
+        />}
       </div>
-    </figure>
-  );
+    </a>
+    <figcaption className={styles.imageTitle}>{photo.title}</figcaption>
+  </figure>;
 }
