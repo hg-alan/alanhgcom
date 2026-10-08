@@ -41,10 +41,6 @@ export default function RichText() {
           Technical:
           <ul style={{ paddingLeft: "15px" }}>
             <li style={{ margin: "0.375rem 0" }}>
-              <Link href="/projects/inbox-distiller">Inbox Distiller</Link>
-              {" — short briefings with sources you can inspect."}
-            </li>
-            <li style={{ margin: "0.375rem 0" }}>
               Ecommerce:{" "}
               <Link href="/ecommerce#lost-and-found" prefetch={true}>
                 Lost & Found
