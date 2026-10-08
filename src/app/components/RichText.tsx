@@ -61,7 +61,7 @@ export default function RichText() {
           </ul>
           <ul style={{ paddingLeft: "15px" }}>
             <li style={{ margin: "0.375rem 0" }}>
-              LLM project:{" "}
+              LLM + Jev:{" "}
               <Link
                 href="https://inboxdistiller.ai"
                 rel="noopener noreferrer"

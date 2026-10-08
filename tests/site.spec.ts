@@ -10,7 +10,7 @@ test('home preserves destinations and shows one Inbox Distiller project link', a
   await expect(page.getByRole('link', { name: 'Mosaic AI', exact: true })).toHaveAttribute('href', 'https://getmosaic.ai');
   const llmLink = page.locator('a[href="https://inboxdistiller.ai"]');
   await expect(llmLink).toHaveText('Inbox Distiller');
-  await expect(llmLink.locator('..')).toHaveText('LLM project: Inbox Distiller');
+  await expect(llmLink.locator('..')).toHaveText('LLM + Jev: Inbox Distiller');
   await expect(page.getByRole('link', { name: /Instacard|Ask-AI/i })).toHaveCount(0);
   await expect(page.getByRole('link', { name: 'Inbox Distiller', exact: true })).toHaveCount(1);
   await page.goto('/projects/inbox-distiller');
