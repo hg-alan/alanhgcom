@@ -4,6 +4,7 @@ import ImageNavigator from "@/app/components/ImagesNavigator";
 import ImagesList from "@/app/components/ImagesList";
 import Link from "next/link";
 import styles from "@/app/components/Image/Image.module.css";
+import { pageMetadata } from "@/lib/page-metadata";
 import {
   getGallery,
   getAllSlugs,
@@ -25,14 +26,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: "Not Found | Alan HG" };
   }
 
-  return {
+  // Reuse an existing photograph that fits sharing-image dimensions without altering originals.
+  const preview = gallery.photos.find(photo => photo.width <= 4096 && photo.height <= 4096);
+  return pageMetadata({
     title: `${gallery.name} Photography | Alan HG`,
     description: gallery.description,
-    openGraph: {
-      title: `${gallery.name} Photography | Alan HG`,
-      description: gallery.description,
-    },
-  };
+    path: `/photography/${gallery.slug}`,
+    image: preview ? { url: `/art/photography/${preview.fileName}`, width: preview.width, height: preview.height, alt: preview.alt } : undefined,
+  });
 }
 
 export default async function PhotographyPage({ params }: PageProps) {

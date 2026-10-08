@@ -1,11 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import Header from "../components/Header";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/page-metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Ecommerce — Alan HG",
-};
+  description: "25+ Shopify store builds as sole developer, consultant and strategist.",
+  path: "/ecommerce",
+});
 
 export default function EcommercePage() {
   return (

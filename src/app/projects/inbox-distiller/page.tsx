@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/app/components/Header";
+import { pageMetadata } from "@/lib/page-metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Inbox Distiller — Alan HG",
   description: "A source-linked briefing built to keep evidence, interpretation and uncertainty visible.",
-};
+  path: "/projects/inbox-distiller",
+});
 
 export default function InboxDistillerProject() {
   return (
