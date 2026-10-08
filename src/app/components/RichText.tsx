@@ -41,6 +41,18 @@ export default function RichText() {
           Technical:
           <ul style={{ paddingLeft: "15px" }}>
             <li style={{ margin: "0.375rem 0" }}>
+              LLM + Jev:{" "}
+              <Link
+                href="https://inboxdistiller.ai"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Inbox Distiller
+              </Link>
+            </li>
+          </ul>
+          <ul style={{ paddingLeft: "15px" }}>
+            <li style={{ margin: "0.375rem 0" }}>
               Ecommerce:{" "}
               <Link href="/ecommerce#lost-and-found" prefetch={true}>
                 Lost & Found
@@ -56,18 +68,6 @@ export default function RichText() {
               &{" "}
               <Link href="/ecommerce#marcus-troy" prefetch={true}>
                 Marcus Troy
-              </Link>
-            </li>
-          </ul>
-          <ul style={{ paddingLeft: "15px" }}>
-            <li style={{ margin: "0.375rem 0" }}>
-              LLM + Jev:{" "}
-              <Link
-                href="https://inboxdistiller.ai"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Inbox Distiller
               </Link>
             </li>
           </ul>
