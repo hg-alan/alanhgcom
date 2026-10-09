@@ -53,7 +53,7 @@ body {
   line-height: 1.5;
 }
 
-/* A little more space below gives the whole page an optical centre.
+/* Give twice as much spare space to the bottom to keep the logo comfortably high.
    These spacers collapse when content needs to scroll. */
 .home::before,
 .home::after {
@@ -62,7 +62,7 @@ body {
 }
 
 .home::after {
-  flex-grow: 1.15;
+  flex-grow: 2;
 }
 
 .home > .site-header {
