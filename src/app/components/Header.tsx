@@ -3,16 +3,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header
-      role="banner"
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        marginTop: "1rem",
-        marginBottom: "1rem",
-      }}
-    >
+    <header role="banner" className="site-header">
       <Link href="/" aria-label="Go to homepage">
         <Image
           src="/alanhg.svg"

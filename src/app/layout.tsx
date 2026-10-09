@@ -3,26 +3,14 @@ import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
+import { WEBSITE_URL } from "@/lib/page-metadata";
 
 const ibmPlexSans = IBM_Plex_Sans({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Alan HG",
   description: "Alan HG's personal website",
-  metadataBase: new URL("https://www.alanhg.com"),
-  openGraph: {
-    type: "website",
-    url: "https://www.alanhg.com",
-    title: "Alan HG",
-    description: "Alan HG's personal website",
-    images: ["/favicon.ico"],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Alan HG",
-    description: "Alan HG's personal website",
-    images: ["/favicon.ico"],
-  },
+  metadataBase: new URL(WEBSITE_URL),
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
