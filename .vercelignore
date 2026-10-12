@@ -1,0 +1,7 @@
+.release-*
+.env*
+.claude
+playwright-report
+test-results
+*.log
+*.tsbuildinfo

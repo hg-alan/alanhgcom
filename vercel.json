@@ -1,0 +1,7 @@
+{
+  "git": {
+    "deploymentEnabled": {
+      "codex/website-inbox-gallery": false
+    }
+  }
+}

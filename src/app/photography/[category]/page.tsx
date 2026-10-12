@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Header from "@/app/components/Header";
 import ImageNavigator from "@/app/components/ImagesNavigator";
 import ImagesList from "@/app/components/ImagesList";
+import Link from "next/link";
+import styles from "@/app/components/Image/Image.module.css";
+import { pageMetadata } from "@/lib/page-metadata";
 import {
   getGallery,
-  getOtherCategories,
   getAllSlugs,
-  type CategorySlug,
 } from "@/data/photography";
 
 interface PageProps {
@@ -26,14 +26,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: "Not Found | Alan HG" };
   }
 
-  return {
+  // Reuse an existing photograph that fits sharing-image dimensions without altering originals.
+  const preview = gallery.photos.find(photo => photo.width <= 4096 && photo.height <= 4096);
+  return pageMetadata({
     title: `${gallery.name} Photography | Alan HG`,
     description: gallery.description,
-    openGraph: {
-      title: `${gallery.name} Photography | Alan HG`,
-      description: gallery.description,
-    },
-  };
+    path: `/photography/${gallery.slug}`,
+    image: preview ? { url: `/art/photography/${preview.fileName}`, width: preview.width, height: preview.height, alt: preview.alt } : undefined,
+  });
 }
 
 export default async function PhotographyPage({ params }: PageProps) {
@@ -44,13 +44,16 @@ export default async function PhotographyPage({ params }: PageProps) {
     notFound();
   }
 
-  const otherCategories = getOtherCategories(category as CategorySlug);
+  const categories = getAllSlugs().map(slug => getGallery(slug)!);
 
   return (
-    <>
-      <Header />
-      <ImagesList photos={gallery.photos} />
-      <ImageNavigator categories={otherCategories} />
-    </>
+      <main id="photography" className={styles.gallery}>
+        <header className={styles.galleryHeader}>
+          <div className={styles.galleryNavigation}><Link href="/" className={styles.galleryHome}>Alan HG</Link><ImageNavigator categories={categories} currentSlug={category}/></div>
+          <div className={styles.galleryHeading}><h1>{gallery.name}</h1><p>{gallery.photos.length} photographs</p></div>
+        </header>
+        <ImagesList photos={gallery.photos} />
+        <footer className={styles.galleryFooter}><a href="#photography">Back to top</a><Link href="/">Home</Link></footer>
+      </main>
   );
 }
