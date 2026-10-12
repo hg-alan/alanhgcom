@@ -1,18 +1,10 @@
 import Link from "next/link";
-import ArtReference from "./ArtReference";
 
 export default function RichText() {
   return (
     <article className="home-content">
       <p>
-        <ArtReference
-          href="https://www.untappedcities.com/banksy-in-nyc-day-27-this-site-contains-blocked-messages-in-greenpoint-after-ny-times-rejects-his-op-ed/"
-          image="https://storage.ghost.io/c/3e/3b/3e3b259f-e5a2-4287-97e8-4888d22daaef/content/images/wp-content/uploads/2013/11/this-site-contains-blocked-messages-bob-cooley_banksy-oct27-131027_064.jpg"
-          description="Banksy's This Site Contains Blocked Messages, photographed by Bob Cooley, on Untapped New York"
-        >
-          THIS SITE
-        </ArtReference>{" "}
-        exists in the <em>spirit</em> of &quot;
+        This site exists in the <em>spirit</em> of &quot;
         <Link
           href="https://youtu.be/kYfNvmF0Bqw?t=53"
           rel="noopener noreferrer"
@@ -113,13 +105,13 @@ export default function RichText() {
 
       <p className="home-signoff">
         <span>&quot;</span>
-        <ArtReference
+        <Link
           href="https://www.dont-panic.cc/capi/wp-content/uploads/2018/02/40110298232_4e9c412936_o.jpg"
-          image="https://www.dont-panic.cc/capi/wp-content/uploads/2018/02/40110298232_4e9c412936_o.jpg"
-          description="DON'T PANIC image"
+          rel="noopener noreferrer"
+          target="_blank"
         >
-          {"DON'T PANIC"}
-        </ArtReference>
+          DON&apos;T PANIC
+        </Link>
         <span>&quot;</span>,
         <br />{" "}
         Alan
