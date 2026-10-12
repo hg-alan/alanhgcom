@@ -39,3 +39,11 @@ Vercel `hgalans-projects/alanhgcom-vzpz`, project `prj_cOE5wZoEoiykl9o9wGCQ7kN4h
 Final SHA, actual preview and upload/provenance receipts are stored in ignored `.release-evidence/release-status.json` after deployment. Public PR records the source revision. Never push or merge main as part of preview preparation.
 
 Resume: `npm run build && npm run lint && npm run typecheck`; serve `npx next start -H 127.0.0.1 -p 3130`; `WEBSITE_TEST_URL=http://127.0.0.1:3130 npm run test:e2e`. The latest agent-owned loopback server uses3130; preserve unrelated sessions. Hosted acceptance verifies all four galleries, optimized images, project text and exact CV. Website publication is complete; Inbox Distiller email acceptance remains a separate release gate. No actual-device acceptance is claimed here.
+
+## 2026-10-12 — approved THIS SITE reference
+
+Implemented the approved Fable proposal: THIS SITE uses the existing red DON'T PANIC link style and opens the Untapped New York source page for Banksy's Greenpoint mural. Only these two art references show image previews on mouse hover or keyboard focus. Escape, pointer exit and focus exit dismiss them; preview height respects short windows. Touch remains a normal single-tap link. Images load only after interaction; failed images leave usable links.
+
+Verification: production build, lint and typecheck pass. Complete desktop/phone browser suite passed 16 cases with 2 intentional duplicate skips; after a short-window refinement, all affected homepage checks passed (7 cases, 1 duplicate skip). Tests cover remote image loading, hover, focus, Escape, navigation, touch behavior, 844x300 open previews, nine compact closed layouts, preserved destinations and unchanged CV checksum. Actual Brave desktop appearance inspected. Phone checks are emulation, not a claim of physical iPhone testing.
+
+Release target is hgalans-projects/alanhgcom-vzpz, using this branch's explicit deployment path. Stage production without domains, verify, then promote the same build. Prior rollback deployment is dpl_4Npmvs2Cf4UAifE36UPmg4SA4R6g. Final deployment receipt and live verification go in ignored .release-evidence/this-site-release-2026-10-12.json. No corpus processing or Inbox Distiller release is implied by this website change.

@@ -1,6 +1,59 @@
 import { createHash } from 'node:crypto';
 import { test, expect } from '@playwright/test';
 
+const banksySource = 'https://www.untappedcities.com/banksy-in-nyc-day-27-this-site-contains-blocked-messages-in-greenpoint-after-ny-times-rejects-his-op-ed/';
+
+test('art references preserve normal navigation and offer optional desktop previews', async ({ page, context }, testInfo) => {
+  await page.goto('/');
+  const site = page.getByRole('link', { name: /^THIS SITE/ });
+  const panic = page.getByRole('link', { name: /^DON'T PANIC/ });
+  await expect(site).toHaveAttribute('href', banksySource);
+  expect(await site.evaluate(el => getComputedStyle(el).color)).toBe(await panic.evaluate(el => getComputedStyle(el).color));
+  await expect(page.locator('.art-reference')).toHaveCount(2);
+  await expect(page.locator('.art-reference-preview')).toHaveCount(0);
+
+  if (testInfo.project.name === 'desktop') {
+    await site.hover();
+    const image = page.locator('.art-reference-preview img');
+    await expect(image).toBeVisible();
+    await expect.poll(() => image.evaluate(el => (el as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+    await image.hover();
+    await expect(image).toBeVisible();
+    await page.keyboard.press('Escape');
+    await expect(image).toHaveCount(0);
+    await page.mouse.move(0, 0);
+    await page.keyboard.press('Tab');
+    await site.focus();
+    await expect(image).toBeVisible();
+    await page.keyboard.press('Escape');
+    await expect(image).toHaveCount(0);
+    await panic.hover();
+    await expect(image).toBeVisible();
+    await expect.poll(() => image.evaluate(el => (el as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+    await page.setViewportSize({ width: 844, height: 300 });
+    for (const link of [site, panic]) {
+      await page.mouse.move(0, 0);
+      await link.hover();
+      await expect(image).toBeVisible();
+      const bounds = await image.boundingBox();
+      expect(bounds!.y).toBeGreaterThanOrEqual(0);
+      expect(bounds!.y + bounds!.height).toBeLessThanOrEqual(300);
+    }
+    await page.mouse.move(0, 0);
+    await expect(image).toHaveCount(0);
+  }
+
+  // Isolate the navigation check from the third-party article's scripts.
+  await context.route(banksySource, route => route.fulfill({ contentType: 'text/html', body: '<title>Banksy source</title>' }));
+  const opened = page.waitForEvent('popup');
+  if (testInfo.project.name === 'phone') await site.tap();
+  else await site.click();
+  const destination = await opened;
+  await expect(destination).toHaveURL(banksySource);
+  if (testInfo.project.name === 'phone') await expect(page.locator('.art-reference-preview')).toHaveCount(0);
+  await destination.close();
+});
+
 test('home preserves destinations and shows one Inbox Distiller project link', async ({ page }) => {
   const errors: string[] = [];
   page.on('pageerror', error => errors.push(error.message));
